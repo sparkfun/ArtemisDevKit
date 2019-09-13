@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -1783,16 +1783,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="27.94" y="21.717" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="27.94" y="18.288" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="J7" library="SparkFun-Connectors" package="FPC-24-AMPHENOL-SFV24R-1STE1HLF" value="CAMERA-HIMAX" x="36.83" y="2.54" smashed="yes" rot="MR0">
-<attribute name="DIGIKEY" value="609-4320-2-ND" x="-11.43" y="-22.86" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="36.83" y="0.2032" size="0.6096" layer="26" font="vector" ratio="20" rot="MR0" align="top-center"/>
-<attribute name="PROD_ID" value="CONN-14233" x="-11.43" y="-22.86" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="36.83" y="2.54" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="center"/>
+<element name="J7" library="SparkFun-Connectors" package="FPC-24-AMPHENOL-SFV24R-1STE1HLF" value="CAMERA-HIMAX" x="39.37" y="2.54" smashed="yes" rot="MR0">
+<attribute name="DIGIKEY" value="609-4320-2-ND" x="-8.89" y="-22.86" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="39.37" y="0.2032" size="0.6096" layer="26" font="vector" ratio="20" rot="MR0" align="top-center"/>
+<attribute name="PROD_ID" value="CONN-14233" x="-8.89" y="-22.86" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="39.37" y="2.54" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="center"/>
 </element>
-<element name="J5" library="SparkFun-Connectors" package="1X08_NO_SILK" value="" x="27.94" y="17.78" smashed="yes">
-<attribute name="NAME" x="26.67" y="19.177" size="0.6096" layer="25" font="vector" ratio="20"/>
-<attribute name="PROD_ID" value="CONN-08438" x="60.96" y="-25.4" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="26.67" y="15.748" size="0.6096" layer="27" font="vector" ratio="20"/>
+<element name="J5" library="SparkFun-Connectors" package="1X08_NO_SILK" value="" x="27.94" y="18.415" smashed="yes">
+<attribute name="NAME" x="26.67" y="19.812" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="PROD_ID" value="CONN-08438" x="60.96" y="-24.765" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="26.67" y="16.383" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_3_1-NC_TRACE_SILK" value="HW/SW RESET" x="82.55" y="25.4" smashed="yes">
 <attribute name="NAME" x="82.55" y="26.543" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
@@ -2016,9 +2016,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="SWCH-13065" x="20.32" y="15.24" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="20.32" y="13.716" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="J9" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="29.21" y="15.24" smashed="yes">
-<attribute name="NAME" x="27.94" y="16.637" size="0.6096" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="27.94" y="13.208" size="0.6096" layer="27" font="vector" ratio="20"/>
+<element name="J9" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="29.21" y="16.51" smashed="yes">
+<attribute name="NAME" x="27.94" y="17.907" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="27.94" y="14.478" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 </elements>
 <signals>
@@ -2179,7 +2179,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="34.29" y1="20.32" x2="36.83" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="31.75" y1="20.32" x2="34.29" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="20.32" x2="31.75" y2="20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="17.78" x2="44.45" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="18.415" x2="44.45" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="22.37" y1="19.85" x2="29.21" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="18.27" y1="19.85" x2="22.37" y2="19.85" width="0" layer="19" extent="1-1"/>
 <wire x1="11.303" y1="17.284" x2="18.27" y2="19.85" width="0" layer="19" extent="1-1"/>
@@ -2200,14 +2200,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="8.333" y1="6.35" x2="9.652" y2="3.556" width="0" layer="19" extent="1-1"/>
 <wire x1="6.504" y1="9.575" x2="7.62" y2="6.35" width="0" layer="19" extent="1-1"/>
 <wire x1="3.81" y1="9.74" x2="6.504" y2="9.575" width="0" layer="19" extent="1-16"/>
-<wire x1="47.68" y1="10.85" x2="45.72" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="31.58" y1="4.94" x2="24.003" y2="3.976" width="0" layer="19" extent="16-16"/>
-<wire x1="36.68" y1="1.85" x2="31.58" y2="4.94" width="0" layer="19" extent="1-16"/>
+<wire x1="47.68" y1="10.85" x2="45.72" y2="18.415" width="0" layer="19" extent="1-1"/>
+<wire x1="34.12" y1="4.94" x2="24.003" y2="3.976" width="0" layer="19" extent="16-16"/>
+<wire x1="36.68" y1="1.85" x2="34.12" y2="4.94" width="0" layer="19" extent="1-16"/>
 <wire x1="37.68" y1="1.85" x2="36.68" y2="1.85" width="0" layer="19" extent="1-1"/>
-<wire x1="38.08" y1="4.94" x2="37.68" y2="1.85" width="0" layer="19" extent="1-16"/>
+<wire x1="40.62" y1="4.94" x2="37.68" y2="1.85" width="0" layer="19" extent="1-16"/>
 <wire x1="41.68" y1="1.85" x2="37.68" y2="1.85" width="0" layer="19" extent="1-1"/>
 <wire x1="47.68" y1="1.85" x2="41.68" y2="1.85" width="0" layer="19" extent="1-1"/>
-<wire x1="36.68" y1="10.85" x2="38.08" y2="4.94" width="0" layer="19" extent="1-16"/>
+<wire x1="36.68" y1="10.85" x2="40.62" y2="4.94" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="3.3V">
 <contactref element="R1" pad="2"/>
@@ -2689,12 +2689,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="97.37" y1="40.64" x2="93.56" y2="40.64" width="0" layer="19" extent="16-16"/>
 <wire x1="95.25" y1="19.9" x2="93.56" y2="40.64" width="0" layer="19" extent="1-16"/>
 <wire x1="90.17" y1="14.605" x2="95.25" y2="19.9" width="0" layer="19" extent="1-1"/>
-<wire x1="43.18" y1="17.78" x2="56.4" y2="62.41" width="0" layer="19" extent="1-1"/>
-<wire x1="36.08" y1="4.94" x2="43.18" y2="17.78" width="0" layer="19" extent="16-16"/>
-<wire x1="37.48" y1="3.35" x2="36.08" y2="4.94" width="0" layer="19" extent="1-16"/>
+<wire x1="43.18" y1="18.415" x2="56.4" y2="62.41" width="0" layer="19" extent="1-1"/>
+<wire x1="38.62" y1="4.94" x2="43.18" y2="18.415" width="0" layer="19" extent="16-16"/>
+<wire x1="37.48" y1="3.35" x2="38.62" y2="4.94" width="0" layer="19" extent="1-16"/>
 <wire x1="36.68" y1="2.85" x2="37.48" y2="3.35" width="0" layer="19" extent="1-1"/>
-<wire x1="32.58" y1="4.94" x2="36.08" y2="4.94" width="0" layer="19" extent="16-16"/>
-<wire x1="18.542" y1="13.462" x2="32.58" y2="4.94" width="0" layer="19" extent="16-16"/>
+<wire x1="35.12" y1="4.94" x2="38.62" y2="4.94" width="0" layer="19" extent="16-16"/>
+<wire x1="18.542" y1="13.462" x2="35.12" y2="4.94" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$23">
 <contactref element="U1" pad="26"/>
@@ -2857,7 +2857,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J7" pad="21"/>
 <wire x1="57.4" y1="62.41" x2="51.32" y2="88.38" width="0" layer="19" extent="1-1"/>
 <wire x1="38.68" y1="10.85" x2="57.4" y2="62.41" width="0" layer="19" extent="1-1"/>
-<wire x1="41.08" y1="4.94" x2="38.68" y2="10.85" width="0" layer="19" extent="1-16"/>
+<wire x1="43.62" y1="4.94" x2="38.68" y2="10.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SDA_INTERNAL">
 <contactref element="U3" pad="~D25"/>
@@ -2866,7 +2866,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J7" pad="22"/>
 <wire x1="57.9" y1="62.41" x2="51.32" y2="86.88" width="0" layer="19" extent="1-1"/>
 <wire x1="36.68" y1="8.85" x2="57.9" y2="62.41" width="0" layer="19" extent="1-1"/>
-<wire x1="41.58" y1="4.94" x2="36.68" y2="8.85" width="0" layer="19" extent="1-16"/>
+<wire x1="44.12" y1="4.94" x2="36.68" y2="8.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="PDM_DATA">
 <contactref element="E2" pad="1"/>
@@ -2885,42 +2885,42 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="CAMERA_D1">
 <contactref element="J7" pad="3"/>
 <contactref element="U3" pad="~D39"/>
-<wire x1="32.08" y1="4.94" x2="46.18" y2="10.05" width="0" layer="19" extent="1-16"/>
+<wire x1="34.62" y1="4.94" x2="46.18" y2="10.05" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_D3">
 <contactref element="J7" pad="5"/>
 <contactref element="U3" pad="D41"/>
-<wire x1="33.08" y1="4.94" x2="40.68" y2="1.85" width="0" layer="19" extent="1-16"/>
+<wire x1="35.62" y1="4.94" x2="40.68" y2="1.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_D4">
 <contactref element="J7" pad="12"/>
 <contactref element="U3" pad="~D42"/>
-<wire x1="36.58" y1="4.94" x2="44.68" y2="1.85" width="0" layer="19" extent="1-16"/>
+<wire x1="39.12" y1="4.94" x2="44.68" y2="1.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_D5">
 <contactref element="J7" pad="20"/>
 <contactref element="U3" pad="~D43"/>
-<wire x1="40.58" y1="4.94" x2="44.18" y2="2.65" width="0" layer="19" extent="1-16"/>
+<wire x1="43.12" y1="4.94" x2="44.18" y2="2.65" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_D6">
 <contactref element="J7" pad="19"/>
 <contactref element="U3" pad="~D44"/>
-<wire x1="40.08" y1="4.94" x2="47.18" y2="2.65" width="0" layer="19" extent="1-16"/>
+<wire x1="42.62" y1="4.94" x2="47.18" y2="2.65" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_D7">
 <contactref element="J7" pad="13"/>
 <contactref element="U3" pad="~D45"/>
-<wire x1="37.08" y1="4.94" x2="41.18" y2="2.65" width="0" layer="19" extent="1-16"/>
+<wire x1="39.62" y1="4.94" x2="41.18" y2="2.65" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_VSYNC">
 <contactref element="J7" pad="6"/>
 <contactref element="U3" pad="~D37"/>
-<wire x1="33.58" y1="4.94" x2="46.68" y2="1.85" width="0" layer="19" extent="1-16"/>
+<wire x1="36.12" y1="4.94" x2="46.68" y2="1.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_HSYNC">
 <contactref element="J7" pad="16"/>
 <contactref element="U3" pad="D36"/>
-<wire x1="38.58" y1="4.94" x2="45.68" y2="1.85" width="0" layer="19" extent="1-16"/>
+<wire x1="41.12" y1="4.94" x2="45.68" y2="1.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="1.8V">
 <contactref element="J7" pad="10"/>
@@ -2929,32 +2929,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="C16" pad="1"/>
 <wire x1="58.74" y1="73.6901" x2="59.055" y2="75.692" width="0" layer="19" extent="1-16"/>
 <wire x1="57.15" y1="73.24" x2="58.74" y2="73.6901" width="0" layer="19" extent="1-1"/>
-<wire x1="35.58" y1="4.94" x2="57.15" y2="73.24" width="0" layer="19" extent="1-16"/>
+<wire x1="38.12" y1="4.94" x2="57.15" y2="73.24" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_PCLK">
 <contactref element="J7" pad="17"/>
 <contactref element="U3" pad="~D28"/>
-<wire x1="39.08" y1="4.94" x2="37.68" y2="10.85" width="0" layer="19" extent="1-16"/>
+<wire x1="41.62" y1="4.94" x2="37.68" y2="10.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_D0">
 <contactref element="J7" pad="14"/>
 <contactref element="U3" pad="D38"/>
-<wire x1="37.58" y1="4.94" x2="46.18" y2="2.65" width="0" layer="19" extent="1-16"/>
+<wire x1="40.12" y1="4.94" x2="46.18" y2="2.65" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_D2">
 <contactref element="J7" pad="9"/>
 <contactref element="U3" pad="D40"/>
-<wire x1="35.08" y1="4.94" x2="45.68" y2="10.85" width="0" layer="19" extent="1-16"/>
+<wire x1="37.62" y1="4.94" x2="45.68" y2="10.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_TRIG">
 <contactref element="J7" pad="7"/>
 <contactref element="U3" pad="~D23"/>
-<wire x1="34.08" y1="4.94" x2="39.18" y2="10.05" width="0" layer="19" extent="1-16"/>
+<wire x1="36.62" y1="4.94" x2="39.18" y2="10.05" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_INT">
 <contactref element="J7" pad="18"/>
 <contactref element="U3" pad="~D24"/>
-<wire x1="39.58" y1="4.94" x2="40.18" y2="10.05" width="0" layer="19" extent="1-16"/>
+<wire x1="42.12" y1="4.94" x2="40.18" y2="10.05" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAMERA_DVDD_EN">
 <contactref element="U4" pad="3"/>
@@ -2966,7 +2966,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="CAMERA_MCLK">
 <contactref element="J7" pad="8"/>
 <contactref element="U3" pad="~D26"/>
-<wire x1="34.58" y1="4.94" x2="36.68" y2="7.85" width="0" layer="19" extent="1-16"/>
+<wire x1="37.12" y1="4.94" x2="36.68" y2="7.85" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="D1_SLSDA">
 <contactref element="J5" pad="1"/>
@@ -2977,57 +2977,57 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="D3_PWM_UARTTX">
 <contactref element="U3" pad="~AD35"/>
 <contactref element="J5" pad="3"/>
-<wire x1="41.18" y1="10.05" x2="33.02" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="41.18" y1="10.05" x2="33.02" y2="18.415" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D4_MISO">
 <contactref element="J5" pad="4"/>
 <contactref element="U3" pad="~D6"/>
-<wire x1="36.68" y1="9.85" x2="35.56" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="36.68" y1="9.85" x2="35.56" y2="18.415" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D5_MOSI_CLKOUT">
 <contactref element="J5" pad="5"/>
 <contactref element="U3" pad="D7"/>
-<wire x1="41.68" y1="10.85" x2="38.1" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="41.68" y1="10.85" x2="38.1" y2="18.415" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D6_SCLK">
 <contactref element="J5" pad="6"/>
 <contactref element="U3" pad="~D5"/>
-<wire x1="42.18" y1="10.05" x2="40.64" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="42.18" y1="10.05" x2="40.64" y2="18.415" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D7">
 <contactref element="J9" pad="1"/>
 <contactref element="U3" pad="~AD13"/>
-<wire x1="37.48" y1="7.35" x2="29.21" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="37.48" y1="7.35" x2="29.21" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D8">
 <contactref element="J9" pad="2"/>
 <contactref element="U3" pad="~AD29"/>
-<wire x1="36.68" y1="4.85" x2="31.75" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="36.68" y1="4.85" x2="31.75" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D9">
 <contactref element="J9" pad="3"/>
 <contactref element="U3" pad="~D4"/>
-<wire x1="34.29" y1="15.24" x2="40.68" y2="10.85" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="16.51" x2="40.68" y2="10.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D10">
 <contactref element="J9" pad="4"/>
 <contactref element="U3" pad="D3"/>
-<wire x1="45.18" y1="2.65" x2="36.83" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="45.18" y1="2.65" x2="36.83" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D11">
 <contactref element="J9" pad="5"/>
 <contactref element="U3" pad="D2"/>
-<wire x1="42.18" y1="2.65" x2="39.37" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="42.18" y1="2.65" x2="39.37" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D12">
 <contactref element="J9" pad="6"/>
 <contactref element="U3" pad="D1"/>
-<wire x1="42.68" y1="1.85" x2="41.91" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="42.68" y1="1.85" x2="41.91" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D13">
 <contactref element="J9" pad="7"/>
 <contactref element="U3" pad="D0"/>
-<wire x1="43.68" y1="1.85" x2="44.45" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="43.68" y1="1.85" x2="44.45" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
