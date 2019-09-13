@@ -274,7 +274,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DAPLINK_KL26Z">
+<deviceset name="DAPLINK_KL26Z" prefix="U">
 <description>Unfinished!
 
 This is an interface MCU that runs DAPLink to enable advanced features for the target MCU</description>
