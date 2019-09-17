@@ -2366,54 +2366,35 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAP" prefix="C" uservalue="yes">
+<deviceset name="12PF" prefix="C" uservalue="yes">
+<description>&lt;h3&gt;12pF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0402" package="0402">
+<device name="-0603-50V-5%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-09137" constant="no"/>
+<attribute name="VALUE" value="12pF" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="-0603" package="0603">
+<device name="-0402-50V-5%" package="0402">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0402-TIGHT" package="0402-TIGHT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0805" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1206" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="VALUE" value="12pF" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -8055,8 +8036,8 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="-0603" value="8pF"/>
-<part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="-0603" value="8pF"/>
+<part name="C10" library="SparkFun-Capacitors" deviceset="12PF" device="-0603-50V-5%" value="12pF"/>
+<part name="C9" library="SparkFun-Capacitors" deviceset="12PF" device="-0603-50V-5%" value="12pF"/>
 <part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -8116,7 +8097,6 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value="HW/SW RESET"/>
 <part name="R22" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value=""/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="ECC1" library="ATECC508A" deviceset="ATECC508A" device="UDFN_2X3MM"/>
 <part name="SUPPLY33" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
@@ -8171,6 +8151,10 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <part name="S3" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-4.6X2.8MM" value="RESET IF"/>
 <part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-4.6X2.8MM" value="RESET TGT"/>
 <part name="J9" library="SparkFun-Connectors" deviceset="CONN_07" device="NO_SILK"/>
+<part name="R32" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="DNP"/>
+<part name="R33" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="DNP"/>
+<part name="R34" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="DNP"/>
+<part name="SUPPLY27" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8461,9 +8445,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <attribute name="NAME" x="132.08" y="147.574" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="132.08" y="129.794" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="J3" gate="G$1" x="266.7" y="218.44" smashed="yes">
-<attribute name="NAME" x="256.54" y="226.314" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="256.54" y="211.074" size="1.778" layer="96" font="vector"/>
+<instance part="J3" gate="G$1" x="269.24" y="200.66" smashed="yes">
+<attribute name="NAME" x="259.08" y="208.534" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="259.08" y="193.294" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="SUPPLY17" gate="G$1" x="127" y="147.32" smashed="yes">
 <attribute name="VALUE" x="127" y="150.114" size="1.778" layer="96" align="bottom-center"/>
@@ -8471,11 +8455,11 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <instance part="GND21" gate="1" x="127" y="121.92" smashed="yes">
 <attribute name="VALUE" x="127" y="121.666" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY10" gate="VDD" x="251.46" y="226.06" smashed="yes">
-<attribute name="VALUE" x="251.46" y="228.854" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY10" gate="VDD" x="254" y="208.28" smashed="yes">
+<attribute name="VALUE" x="254" y="211.074" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND7" gate="1" x="251.46" y="210.82" smashed="yes">
-<attribute name="VALUE" x="251.46" y="210.566" size="1.778" layer="96" align="top-center"/>
+<instance part="GND7" gate="1" x="254" y="193.04" smashed="yes">
+<attribute name="VALUE" x="254" y="192.786" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="C2" gate="G$1" x="320.04" y="246.38" smashed="yes">
 <attribute name="NAME" x="321.564" y="249.301" size="1.778" layer="95" font="vector"/>
@@ -8559,10 +8543,6 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <instance part="R22" gate="G$1" x="254" y="154.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="252.476" y="154.94" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="255.524" y="154.94" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="TP2" gate="G$1" x="251.46" y="162.56" smashed="yes" rot="R180">
-<attribute name="NAME" x="246.38" y="162.56" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="254" y="165.1" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="GND19" gate="1" x="254" y="144.78" smashed="yes">
 <attribute name="VALUE" x="254" y="144.526" size="1.778" layer="96" align="top-center"/>
@@ -8691,18 +8671,18 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <attribute name="VALUE" x="251.46" y="40.894" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="251.46" y="66.548" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J5" gate="G$1" x="243.84" y="58.42" smashed="yes" rot="R180">
-<attribute name="VALUE" x="248.92" y="70.866" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="248.92" y="45.212" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="J5" gate="G$1" x="241.3" y="86.36" smashed="yes" rot="R180">
+<attribute name="VALUE" x="246.38" y="98.806" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="246.38" y="73.152" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="GND36" gate="1" x="264.16" y="40.64" smashed="yes">
 <attribute name="VALUE" x="264.16" y="40.386" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND35" gate="1" x="236.22" y="40.64" smashed="yes">
-<attribute name="VALUE" x="236.22" y="40.386" size="1.778" layer="96" align="top-center"/>
+<instance part="GND35" gate="1" x="233.68" y="71.12" smashed="yes">
+<attribute name="VALUE" x="233.68" y="70.866" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY22" gate="VDD" x="236.22" y="68.58" smashed="yes">
-<attribute name="VALUE" x="236.22" y="71.374" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY22" gate="VDD" x="233.68" y="96.52" smashed="yes">
+<attribute name="VALUE" x="233.68" y="99.314" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="C19" gate="G$1" x="83.82" y="53.34" smashed="yes">
 <attribute name="NAME" x="85.344" y="56.261" size="1.778" layer="95" font="vector"/>
@@ -8742,9 +8722,24 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <attribute name="NAME" x="355.6" y="250.444" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="355.6" y="248.412" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="J9" gate="J1" x="243.84" y="86.36" smashed="yes" rot="R180">
-<attribute name="VALUE" x="248.92" y="96.266" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="248.92" y="73.152" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="J9" gate="J1" x="241.3" y="58.42" smashed="yes" rot="R180">
+<attribute name="VALUE" x="246.38" y="68.326" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="246.38" y="45.212" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="R32" gate="G$1" x="281.94" y="213.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="280.416" y="213.36" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="278.384" y="220.98" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R33" gate="G$1" x="287.02" y="213.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="285.496" y="213.36" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="283.464" y="220.98" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R34" gate="G$1" x="292.1" y="213.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="290.576" y="213.36" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="288.544" y="220.98" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY27" gate="VDD" x="281.94" y="226.06" smashed="yes">
+<attribute name="VALUE" x="281.94" y="228.854" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -8877,8 +8872,8 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="GND"/>
-<wire x1="254" y1="215.9" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="215.9" x2="251.46" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="254" y1="198.12" x2="254" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9032,10 +9027,10 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="GND36" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="8"/>
-<wire x1="236.22" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="48.26" x2="236.22" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="76.2" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND35" gate="1" pin="GND"/>
+<wire x1="233.68" y1="76.2" x2="236.22" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -9538,8 +9533,8 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="VCC"/>
-<wire x1="254" y1="223.52" x2="251.46" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="223.52" x2="251.46" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="205.74" x2="254" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="254" y1="205.74" x2="254" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="VDD" pin="VDD"/>
 </segment>
 <segment>
@@ -9640,10 +9635,24 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="SUPPLY31" gate="VDD" pin="VDD"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="7"/>
-<wire x1="238.76" y1="50.8" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="50.8" x2="236.22" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R34" gate="G$1" pin="2"/>
+<wire x1="292.1" y1="218.44" x2="292.1" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="223.52" x2="287.02" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="R33" gate="G$1" pin="2"/>
+<wire x1="287.02" y1="223.52" x2="287.02" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="R32" gate="G$1" pin="2"/>
+<wire x1="281.94" y1="218.44" x2="281.94" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="223.52" x2="287.02" y2="223.52" width="0.1524" layer="91"/>
+<junction x="287.02" y="223.52"/>
+<wire x1="281.94" y1="223.52" x2="281.94" y2="226.06" width="0.1524" layer="91"/>
+<junction x="281.94" y="223.52"/>
+<pinref part="SUPPLY27" gate="VDD" pin="VDD"/>
+</segment>
+<segment>
 <pinref part="SUPPLY22" gate="VDD" pin="VDD"/>
+<wire x1="233.68" y1="96.52" x2="233.68" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="93.98" x2="236.22" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -9675,8 +9684,12 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="SWDCLK"/>
-<wire x1="279.4" y1="218.44" x2="276.86" y2="218.44" width="0.1524" layer="91"/>
-<label x="279.4" y="218.44" size="1.27" layer="95" xref="yes"/>
+<wire x1="294.64" y1="200.66" x2="287.02" y2="200.66" width="0.1524" layer="91"/>
+<label x="294.64" y="200.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="R33" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="200.66" x2="279.4" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="208.28" x2="287.02" y2="200.66" width="0.1524" layer="91"/>
+<junction x="287.02" y="200.66"/>
 </segment>
 <segment>
 <pinref part="U3" gate="U1" pin="D20(SWDCK/TX1)"/>
@@ -9692,8 +9705,12 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="SWDIO"/>
-<wire x1="279.4" y1="220.98" x2="276.86" y2="220.98" width="0.1524" layer="91"/>
-<label x="279.4" y="220.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="294.64" y1="203.2" x2="281.94" y2="203.2" width="0.1524" layer="91"/>
+<label x="294.64" y="203.2" size="1.27" layer="95" xref="yes"/>
+<pinref part="R32" gate="G$1" pin="1"/>
+<wire x1="281.94" y1="203.2" x2="279.4" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="208.28" x2="281.94" y2="203.2" width="0.1524" layer="91"/>
+<junction x="281.94" y="203.2"/>
 </segment>
 <segment>
 <pinref part="U3" gate="U1" pin="D21(SWDIO/RX1/SCCRST)"/>
@@ -9709,8 +9726,12 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="SWO"/>
-<wire x1="279.4" y1="215.9" x2="276.86" y2="215.9" width="0.1524" layer="91"/>
-<label x="279.4" y="215.9" size="1.27" layer="95" xref="yes"/>
+<wire x1="294.64" y1="198.12" x2="292.1" y2="198.12" width="0.1524" layer="91"/>
+<label x="294.64" y="198.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="R34" gate="G$1" pin="1"/>
+<wire x1="292.1" y1="198.12" x2="279.4" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="208.28" x2="292.1" y2="198.12" width="0.1524" layer="91"/>
+<junction x="292.1" y="198.12"/>
 </segment>
 <segment>
 <pinref part="U3" gate="U1" pin="(PDMCLK/SWO)~D22"/>
@@ -9827,8 +9848,8 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="!RESET"/>
-<wire x1="279.4" y1="223.52" x2="276.86" y2="223.52" width="0.1524" layer="91"/>
-<label x="279.4" y="223.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="294.64" y1="205.74" x2="279.4" y2="205.74" width="0.1524" layer="91"/>
+<label x="294.64" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!TGT_RST!_SW" class="0">
@@ -9850,9 +9871,6 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="162.56" x2="254" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="254" y1="162.56" x2="254" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="254" y1="162.56" x2="251.46" y2="162.56" width="0.1524" layer="91"/>
-<junction x="254" y="162.56"/>
-<pinref part="TP2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -9870,6 +9888,21 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <wire x1="236.22" y1="17.78" x2="241.3" y2="17.78" width="0.1524" layer="91"/>
 <label x="236.22" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="43.18" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
+<label x="45.72" y="58.42" size="1.27" layer="95" xref="yes"/>
+<pinref part="J7" gate="G$1" pin="SCL"/>
+</segment>
+<segment>
+<pinref part="ECC1" gate="G$1" pin="SCL"/>
+<wire x1="96.52" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
+<label x="99.06" y="25.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="SCL/SPC"/>
+<label x="195.58" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="193.04" y1="60.96" x2="195.58" y2="60.96" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -9886,34 +9919,10 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <wire x1="236.22" y1="20.32" x2="241.3" y2="20.32" width="0.1524" layer="91"/>
 <label x="236.22" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="SCL_INTERNAL" class="0">
 <segment>
-<pinref part="U3" gate="U1" pin="(SCL2/SCK2)~D27"/>
-<wire x1="355.6" y1="119.38" x2="353.06" y2="119.38" width="0.1524" layer="91"/>
-<label x="355.6" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="ECC1" gate="G$1" pin="SCL"/>
-<wire x1="96.52" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
-<label x="99.06" y="25.4" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="SCL/SPC"/>
-<label x="195.58" y="60.96" size="1.27" layer="95" xref="yes"/>
-<wire x1="193.04" y1="60.96" x2="195.58" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
-<label x="45.72" y="58.42" size="1.27" layer="95" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="SCL"/>
-</segment>
-</net>
-<net name="SDA_INTERNAL" class="0">
-<segment>
-<pinref part="U3" gate="U1" pin="(SDA2/MISO2/RX1)~D25"/>
-<wire x1="355.6" y1="124.46" x2="353.06" y2="124.46" width="0.1524" layer="91"/>
-<label x="355.6" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="43.18" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
+<label x="45.72" y="55.88" size="1.27" layer="95" xref="yes"/>
+<pinref part="J7" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <pinref part="ECC1" gate="G$1" pin="SDA"/>
@@ -9924,11 +9933,6 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="U5" gate="G$1" pin="SDA/SDI/SDO"/>
 <wire x1="193.04" y1="58.42" x2="195.58" y2="58.42" width="0.1524" layer="91"/>
 <label x="195.58" y="58.42" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
-<label x="45.72" y="55.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="PDM_DATA" class="0">
@@ -9962,9 +9966,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="D1"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(SCL4/SCK4/TX1)~D39"/>
-<wire x1="355.6" y1="106.68" x2="353.06" y2="106.68" width="0.1524" layer="91"/>
-<label x="355.6" y="106.68" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="AD34(CMPRF2/PDMDATA)"/>
+<wire x1="281.94" y1="106.68" x2="284.48" y2="106.68" width="0.1524" layer="91"/>
+<label x="281.94" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D3" class="0">
@@ -9974,9 +9978,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="D3"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(BLEIF_IRQ/SWO/I2SWCLK)D41"/>
-<wire x1="355.6" y1="101.6" x2="353.06" y2="101.6" width="0.1524" layer="91"/>
-<label x="355.6" y="101.6" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="~AD33(SWO/32KHZ)"/>
+<wire x1="281.94" y1="109.22" x2="284.48" y2="109.22" width="0.1524" layer="91"/>
+<label x="281.94" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D4" class="0">
@@ -9986,9 +9990,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="D4"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(SCL3/SCK3/TX1)~D42"/>
-<wire x1="355.6" y1="99.06" x2="353.06" y2="99.06" width="0.1524" layer="91"/>
-<label x="355.6" y="99.06" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(BLEIF_IRQ/SWO/I2SWCLK)D41"/>
+<wire x1="355.6" y1="101.6" x2="353.06" y2="101.6" width="0.1524" layer="91"/>
+<label x="355.6" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D5" class="0">
@@ -9998,9 +10002,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="D5"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(SDA3/MISO3/RX1)~D43"/>
-<wire x1="355.6" y1="96.52" x2="353.06" y2="96.52" width="0.1524" layer="91"/>
-<label x="355.6" y="96.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(MOSI4)~D44"/>
+<wire x1="355.6" y1="93.98" x2="353.06" y2="93.98" width="0.1524" layer="91"/>
+<label x="355.6" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D6" class="0">
@@ -10010,9 +10014,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="D6"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(MOSI4)~D44"/>
-<wire x1="353.06" y1="93.98" x2="355.6" y2="93.98" width="0.1524" layer="91"/>
-<label x="355.6" y="93.98" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(TX1/PDMCLK/SCCIO)~D37"/>
+<wire x1="355.6" y1="111.76" x2="353.06" y2="111.76" width="0.1524" layer="91"/>
+<label x="355.6" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D7" class="0">
@@ -10034,9 +10038,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="FVLD"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(TX1/PDMCLK/SCCIO)~D37"/>
-<wire x1="355.6" y1="111.76" x2="353.06" y2="111.76" width="0.1524" layer="91"/>
-<label x="355.6" y="111.76" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="AD16(TRIG0/SCCRST)"/>
+<wire x1="281.94" y1="119.38" x2="284.48" y2="119.38" width="0.1524" layer="91"/>
+<label x="281.94" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_HSYNC" class="0">
@@ -10046,9 +10050,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="LVLD"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(RX1/TRIG1/PDMDATA)D36"/>
-<wire x1="355.6" y1="114.3" x2="353.06" y2="114.3" width="0.1524" layer="91"/>
-<label x="355.6" y="114.3" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SCL3/SCK3/TX1)~D42"/>
+<wire x1="355.6" y1="99.06" x2="353.06" y2="99.06" width="0.1524" layer="91"/>
+<label x="355.6" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="1.8V" class="0">
@@ -10077,9 +10081,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="PCLK"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(MOSI2/I2SWCLK)~D28"/>
-<wire x1="355.6" y1="116.84" x2="353.06" y2="116.84" width="0.1524" layer="91"/>
-<label x="355.6" y="116.84" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(RX1/TRIG1/PDMDATA)D36"/>
+<wire x1="355.6" y1="114.3" x2="353.06" y2="114.3" width="0.1524" layer="91"/>
+<label x="355.6" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D0" class="0">
@@ -10089,9 +10093,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="D0"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(MOSI3/RX1)D38"/>
-<wire x1="355.6" y1="109.22" x2="353.06" y2="109.22" width="0.1524" layer="91"/>
-<label x="355.6" y="109.22" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SDA3/MISO3/RX1)~D43"/>
+<wire x1="355.6" y1="96.52" x2="353.06" y2="96.52" width="0.1524" layer="91"/>
+<label x="355.6" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D2" class="0">
@@ -10101,9 +10105,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="D2"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(SDA4/MISO4/RX1)D40"/>
-<wire x1="355.6" y1="104.14" x2="353.06" y2="104.14" width="0.1524" layer="91"/>
-<label x="355.6" y="104.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="~AD31(SCCCLK)"/>
+<wire x1="281.94" y1="114.3" x2="284.48" y2="114.3" width="0.1524" layer="91"/>
+<label x="281.94" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_TRIG" class="0">
@@ -10113,9 +10117,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="TRIG"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(I2SWCLK/CMPOUT)~D23"/>
-<wire x1="355.6" y1="129.54" x2="353.06" y2="129.54" width="0.1524" layer="91"/>
-<label x="355.6" y="129.54" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(CMPRF1/TRIG1/SCCCLK)D17"/>
+<wire x1="355.6" y1="139.7" x2="353.06" y2="139.7" width="0.1524" layer="91"/>
+<label x="355.6" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_INT" class="0">
@@ -10125,9 +10129,9 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="INT"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(TX1/32KHZ/SWO)~D24"/>
-<wire x1="355.6" y1="127" x2="353.06" y2="127" width="0.1524" layer="91"/>
-<label x="355.6" y="127" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(MOSI3/RX1)D38"/>
+<wire x1="355.6" y1="109.22" x2="353.06" y2="109.22" width="0.1524" layer="91"/>
+<label x="355.6" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_DVDD_EN" class="0">
@@ -10140,11 +10144,6 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <junction x="91.44" y="60.96"/>
 <pinref part="R30" gate="G$1" pin="2"/>
 </segment>
-<segment>
-<pinref part="U3" gate="U1" pin="(MOSI1/TX1/PDMCLK)D10"/>
-<wire x1="355.6" y1="147.32" x2="353.06" y2="147.32" width="0.1524" layer="91"/>
-<label x="355.6" y="147.32" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="CAMERA_MCLK" class="0">
 <segment>
@@ -10153,138 +10152,148 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pinref part="J7" gate="G$1" pin="MCLK"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(SCCRST)~D26"/>
-<wire x1="355.6" y1="121.92" x2="353.06" y2="121.92" width="0.1524" layer="91"/>
-<label x="355.6" y="121.92" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(CMPIN1/SCCIO)~D18"/>
+<wire x1="355.6" y1="137.16" x2="353.06" y2="137.16" width="0.1524" layer="91"/>
+<label x="355.6" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="D1_SLSDA" class="0">
+<net name="D13" class="0">
 <segment>
-<pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="66.04" x2="238.76" y2="66.04" width="0.1524" layer="91"/>
-<label x="233.68" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J9" gate="J1" pin="7"/>
+<wire x1="233.68" y1="48.26" x2="236.22" y2="48.26" width="0.1524" layer="91"/>
+<label x="233.68" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="355.6" y1="165.1" x2="353.06" y2="165.1" width="0.1524" layer="91"/>
+<label x="355.6" y="165.1" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SLNCE/I2SWCLK)D3"/>
 </segment>
 </net>
-<net name="D2_SLSCL" class="0">
+<net name="D1" class="0">
 <segment>
-<pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="63.5" x2="238.76" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="J9" gate="J1" pin="1"/>
+<wire x1="233.68" y1="63.5" x2="236.22" y2="63.5" width="0.1524" layer="91"/>
 <label x="233.68" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="D3_PWM_UARTTX" class="0">
 <segment>
-<pinref part="U3" gate="U1" pin="~AD35(TX1/I2SDAT/PDMCLK)"/>
-<wire x1="281.94" y1="104.14" x2="284.48" y2="104.14" width="0.1524" layer="91"/>
-<label x="281.94" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="281.94" y1="116.84" x2="284.48" y2="116.84" width="0.1524" layer="91"/>
+<label x="281.94" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="U1" pin="~AD29(PDMDATA)"/>
+</segment>
+</net>
+<net name="D2" class="0">
+<segment>
+<wire x1="233.68" y1="91.44" x2="236.22" y2="91.44" width="0.1524" layer="91"/>
+<label x="233.68" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="3"/>
-<wire x1="233.68" y1="60.96" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="121.92" x2="284.48" y2="121.92" width="0.1524" layer="91"/>
+<label x="281.94" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="U1" pin="~AD13(I2SBCLK/RX1)"/>
+</segment>
+</net>
+<net name="D3" class="0">
+<segment>
+<pinref part="J9" gate="J1" pin="2"/>
+<wire x1="233.68" y1="60.96" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
 <label x="233.68" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="D4_MISO" class="0">
 <segment>
-<pinref part="J5" gate="G$1" pin="4"/>
-<wire x1="233.68" y1="58.42" x2="238.76" y2="58.42" width="0.1524" layer="91"/>
-<label x="233.68" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="355.6" y1="124.46" x2="353.06" y2="124.46" width="0.1524" layer="91"/>
+<label x="355.6" y="124.46" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SDA2/MISO2/RX1)~D25"/>
 </segment>
+</net>
+<net name="D4" class="0">
 <segment>
-<pinref part="U3" gate="U1" pin="(SDA0/MISO0/I2SDAT)~D6"/>
 <wire x1="355.6" y1="157.48" x2="353.06" y2="157.48" width="0.1524" layer="91"/>
 <label x="355.6" y="157.48" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SDA0/MISO0/I2SDAT)~D6"/>
+</segment>
+<segment>
+<wire x1="233.68" y1="88.9" x2="236.22" y2="88.9" width="0.1524" layer="91"/>
+<label x="233.68" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="D5_MOSI_CLKOUT" class="0">
+<net name="D5" class="0">
 <segment>
-<pinref part="J5" gate="G$1" pin="5"/>
-<wire x1="238.76" y1="55.88" x2="233.68" y2="55.88" width="0.1524" layer="91"/>
-<label x="233.68" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="355.6" y1="119.38" x2="353.06" y2="119.38" width="0.1524" layer="91"/>
+<label x="355.6" y="119.38" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SCL2/SCK2)~D27"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(MOSI0/CLKOUT)~D7"/>
-<wire x1="355.6" y1="154.94" x2="353.06" y2="154.94" width="0.1524" layer="91"/>
-<label x="355.6" y="154.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="J9" gate="J1" pin="3"/>
+<wire x1="233.68" y1="58.42" x2="236.22" y2="58.42" width="0.1524" layer="91"/>
+<label x="233.68" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="D6_SCLK" class="0">
+<net name="D6" class="0">
 <segment>
-<pinref part="J5" gate="G$1" pin="6"/>
-<wire x1="233.68" y1="53.34" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
-<label x="233.68" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="355.6" y1="162.56" x2="353.06" y2="162.56" width="0.1524" layer="91"/>
+<label x="355.6" y="162.56" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(RX1/SLINT)~D4"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(SCL0/SCK0)~D5"/>
-<wire x1="355.6" y1="160.02" x2="353.06" y2="160.02" width="0.1524" layer="91"/>
-<label x="355.6" y="160.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="233.68" y1="86.36" x2="236.22" y2="86.36" width="0.1524" layer="91"/>
+<label x="233.68" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="D7" class="0">
 <segment>
-<pinref part="J9" gate="J1" pin="1"/>
-<wire x1="236.22" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
-<label x="236.22" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="281.94" y1="104.14" x2="284.48" y2="104.14" width="0.1524" layer="91"/>
+<label x="281.94" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="U1" pin="~AD35(TX1/I2SDAT/PDMCLK)"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="~AD13(I2SBCLK/RX1)"/>
-<wire x1="281.94" y1="121.92" x2="284.48" y2="121.92" width="0.1524" layer="91"/>
-<label x="281.94" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J9" gate="J1" pin="4"/>
+<wire x1="233.68" y1="55.88" x2="236.22" y2="55.88" width="0.1524" layer="91"/>
+<label x="233.68" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D8" class="0">
 <segment>
-<pinref part="J9" gate="J1" pin="2"/>
-<wire x1="236.22" y1="88.9" x2="238.76" y2="88.9" width="0.1524" layer="91"/>
-<label x="236.22" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="355.6" y1="154.94" x2="353.06" y2="154.94" width="0.1524" layer="91"/>
+<label x="355.6" y="154.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(MOSI0/CLKOUT)~D7"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="~AD29(PDMDATA)"/>
-<wire x1="281.94" y1="116.84" x2="284.48" y2="116.84" width="0.1524" layer="91"/>
-<label x="281.94" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="233.68" y1="83.82" x2="236.22" y2="83.82" width="0.1524" layer="91"/>
+<label x="233.68" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="D9" class="0">
 <segment>
-<pinref part="J9" gate="J1" pin="3"/>
-<wire x1="236.22" y1="86.36" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
-<label x="236.22" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J9" gate="J1" pin="5"/>
+<wire x1="233.68" y1="53.34" x2="236.22" y2="53.34" width="0.1524" layer="91"/>
+<label x="233.68" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(RX1/SLINT)~D4"/>
-<wire x1="355.6" y1="162.56" x2="353.06" y2="162.56" width="0.1524" layer="91"/>
-<label x="355.6" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="355.6" y1="160.02" x2="353.06" y2="160.02" width="0.1524" layer="91"/>
+<label x="355.6" y="160.02" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SCL0/SCK0)~D5"/>
 </segment>
 </net>
 <net name="D10" class="0">
 <segment>
-<pinref part="J9" gate="J1" pin="4"/>
-<wire x1="236.22" y1="83.82" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
-<label x="236.22" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="355.6" y1="167.64" x2="353.06" y2="167.64" width="0.1524" layer="91"/>
+<label x="355.6" y="167.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SLMISO)D2"/>
 </segment>
 <segment>
-<pinref part="U3" gate="U1" pin="(SLNCE/I2SWCLK)D3"/>
-<wire x1="355.6" y1="165.1" x2="353.06" y2="165.1" width="0.1524" layer="91"/>
-<label x="355.6" y="165.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="236.22" y1="81.28" x2="233.68" y2="81.28" width="0.1524" layer="91"/>
+<label x="233.68" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="D11" class="0">
 <segment>
-<pinref part="J9" gate="J1" pin="5"/>
-<wire x1="236.22" y1="81.28" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
-<label x="236.22" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U3" gate="U1" pin="(SLMISO)D2"/>
-<wire x1="355.6" y1="167.64" x2="353.06" y2="167.64" width="0.1524" layer="91"/>
-<label x="355.6" y="167.64" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="D12" class="0">
-<segment>
 <pinref part="J9" gate="J1" pin="6"/>
-<wire x1="236.22" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
-<label x="236.22" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="233.68" y1="50.8" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
+<label x="233.68" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="U1" pin="(SLMOSI/SLSDA)D1"/>
@@ -10292,16 +10301,16 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <label x="355.6" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="D13" class="0">
+<net name="D12" class="0">
 <segment>
-<pinref part="J9" gate="J1" pin="7"/>
-<wire x1="236.22" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
-<label x="236.22" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U3" gate="U1" pin="(SLSCK/SLSCL/CLKOUT)D0"/>
 <wire x1="355.6" y1="172.72" x2="353.06" y2="172.72" width="0.1524" layer="91"/>
 <label x="355.6" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="U1" pin="(SLSCK/SLSCL/CLKOUT)D0"/>
+</segment>
+<segment>
+<wire x1="233.68" y1="78.74" x2="236.22" y2="78.74" width="0.1524" layer="91"/>
+<label x="233.68" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="7"/>
 </segment>
 </net>
 </nets>
