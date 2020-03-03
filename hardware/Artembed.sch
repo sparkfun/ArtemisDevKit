@@ -1218,13 +1218,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="VDD">
-<description>&lt;h3&gt;VDD Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
 <symbol name="1.8V">
 <description>&lt;h3&gt;1.8V Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -1253,20 +1246,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VDD" prefix="SUPPLY">
-<description>&lt;h3&gt;VDD Voltage Supply&lt;/h3&gt;
-&lt;p&gt;Positive voltage supply (traditionally for a CMOS device, D=drain).&lt;/p&gt;</description>
-<gates>
-<gate name="VDD" symbol="VDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -8584,8 +8563,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R15" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
-<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="R13" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY24" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -8622,6 +8599,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J11" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE"/>
 <part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9000,12 +8979,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="321.056" y="236.22" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="324.104" y="236.22" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="SUPPLY11" gate="VDD" x="322.58" y="243.84" smashed="yes">
-<attribute name="VALUE" x="322.58" y="246.634" size="1.778" layer="96" font="vector" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY12" gate="VDD" x="330.2" y="243.84" smashed="yes">
-<attribute name="VALUE" x="330.2" y="246.634" size="1.778" layer="96" font="vector" align="bottom-center"/>
-</instance>
 <instance part="R13" gate="G$1" x="215.9" y="228.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="214.376" y="228.6" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="217.424" y="228.6" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -9128,6 +9101,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="JP1" gate="G$1" x="119.38" y="195.58" smashed="yes">
 <attribute name="NAME" x="116.84" y="198.12" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SUPPLY11" gate="G$1" x="322.58" y="243.84" smashed="yes">
+<attribute name="VALUE" x="322.58" y="246.634" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY12" gate="G$1" x="330.2" y="243.84" smashed="yes">
+<attribute name="VALUE" x="330.2" y="246.634" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -9644,6 +9623,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="J12" gate="G$1" pin="6"/>
 <pinref part="J12" gate="G$1" pin="7"/>
 </segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="322.58" y1="243.84" x2="322.58" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="330.2" y1="243.84" x2="330.2" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="LED_MSD" class="0">
 <segment>
@@ -10153,18 +10142,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="124.46" y1="215.9" x2="127" y2="215.9" width="0.1524" layer="91"/>
 <label x="124.46" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="S1" gate="G$1" pin="1A"/>
-</segment>
-</net>
-<net name="VDD" class="0">
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="322.58" y1="243.84" x2="322.58" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="VDD" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="330.2" y1="243.84" x2="330.2" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="SUPPLY12" gate="VDD" pin="VDD"/>
 </segment>
 </net>
 <net name="SCL" class="0">
