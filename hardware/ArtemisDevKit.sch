@@ -23950,10 +23950,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="294.64" y="81.28" size="2.54" layer="97" font="vector" align="center">Camera</text>
 <text x="210.82" y="88.9" size="1.778" layer="97" font="vector">I2C Address:
 0x19 (SA0 = 1)</text>
-<wire x1="165.1" y1="279.4" x2="165.1" y2="111.76" width="0.2032" layer="97" style="longdash"/>
-<wire x1="165.1" y1="111.76" x2="165.1" y2="0" width="0.2032" layer="97" style="longdash"/>
-<wire x1="0" y1="111.76" x2="165.1" y2="111.76" width="0.2032" layer="97" style="longdash"/>
-<wire x1="165.1" y1="111.76" x2="330.2" y2="111.76" width="0.2032" layer="97" style="longdash"/>
+<wire x1="162.56" y1="279.4" x2="162.56" y2="111.76" width="0.2032" layer="97" style="longdash"/>
+<wire x1="162.56" y1="111.76" x2="162.56" y2="0" width="0.2032" layer="97" style="longdash"/>
+<wire x1="0" y1="111.76" x2="162.56" y2="111.76" width="0.2032" layer="97" style="longdash"/>
+<wire x1="162.56" y1="111.76" x2="330.2" y2="111.76" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="111.76" x2="330.2" y2="228.6" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="228.6" x2="330.2" y2="279.4" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="35.56" x2="330.2" y2="111.76" width="0.2032" layer="97" style="longdash"/>
@@ -24069,11 +24069,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="TP4" gate="G$1" x="121.92" y="165.1">
 <attribute name="NAME" x="127" y="165.1" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="119.38" y="162.56" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="TP3" gate="G$1" x="121.92" y="162.56">
 <attribute name="NAME" x="127" y="162.56" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="119.38" y="160.02" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="X1" gate="G$1" x="43.18" y="160.02">
 <attribute name="VALUE" x="39.624" y="163.576" size="1.778" layer="96" font="vector" align="top-left"/>
