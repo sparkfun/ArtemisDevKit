@@ -15145,187 +15145,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="artembed">
-<packages>
-<package name="QFN-32-NOPAD">
-<description>&lt;h3&gt;QFN 32-Pin package w/ Thermal Pad&lt;/h3&gt;
-&lt;b&gt;***Unproven***&lt;/b&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;B&gt;Applicable Parts:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;TLC5940&lt;/ul&gt;</description>
-<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="2.1" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="2.5" x2="-2.1" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.1" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="2.1" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2.1" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2.5" x2="2.1" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-2.1" x2="-2.1" y2="-2.5" width="0.127" layer="21"/>
-<smd name="1" x="-1.75" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
-<smd name="2" x="-1.25" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
-<smd name="3" x="-0.75" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
-<smd name="4" x="-0.25" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
-<smd name="5" x="0.25" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
-<smd name="6" x="0.75" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
-<smd name="7" x="1.25" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
-<smd name="8" x="1.75" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
-<smd name="9" x="2.5" y="-1.75" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
-<smd name="10" x="2.5" y="-1.25" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
-<smd name="11" x="2.5" y="-0.75" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
-<smd name="12" x="2.5" y="-0.25" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
-<smd name="13" x="2.5" y="0.25" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
-<smd name="14" x="2.5" y="0.75" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
-<smd name="15" x="2.5" y="1.25" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
-<smd name="16" x="2.5" y="1.75" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
-<smd name="17" x="1.75" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
-<smd name="18" x="1.25" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
-<smd name="19" x="0.75" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
-<smd name="20" x="0.25" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
-<smd name="21" x="-0.25" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
-<smd name="22" x="-0.75" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
-<smd name="23" x="-1.25" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
-<smd name="24" x="-1.75" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
-<smd name="25" x="-2.5" y="1.75" dx="0.8" dy="0.2846" layer="1"/>
-<smd name="26" x="-2.5" y="1.25" dx="0.8" dy="0.2846" layer="1"/>
-<smd name="27" x="-2.5" y="0.75" dx="0.8" dy="0.2846" layer="1"/>
-<smd name="28" x="-2.5" y="0.25" dx="0.8" dy="0.2846" layer="1"/>
-<smd name="29" x="-2.5" y="-0.25" dx="0.8" dy="0.2846" layer="1"/>
-<smd name="30" x="-2.5" y="-0.75" dx="0.8" dy="0.2846" layer="1"/>
-<smd name="31" x="-2.5" y="-1.25" dx="0.8" dy="0.2846" layer="1"/>
-<smd name="32" x="-2.5" y="-1.75" dx="0.8" dy="0.2846" layer="1"/>
-<rectangle x1="-2.5" y1="0.13" x2="-2.1" y2="0.37" layer="51"/>
-<rectangle x1="-2.5" y1="-0.37" x2="-2.1" y2="-0.13" layer="51"/>
-<rectangle x1="-2.5" y1="-0.87" x2="-2.1" y2="-0.63" layer="51"/>
-<rectangle x1="-2.5" y1="-1.37" x2="-2.1" y2="-1.13" layer="51"/>
-<rectangle x1="-2.5" y1="-1.87" x2="-2.1" y2="-1.63" layer="51"/>
-<rectangle x1="-2.5" y1="0.63" x2="-2.1" y2="0.87" layer="51"/>
-<rectangle x1="-2.5" y1="1.13" x2="-2.1" y2="1.37" layer="51"/>
-<rectangle x1="-2.5" y1="1.63" x2="-2.1" y2="1.87" layer="51"/>
-<rectangle x1="0.05" y1="2.18" x2="0.45" y2="2.42" layer="51" rot="R270"/>
-<rectangle x1="-0.45" y1="2.18" x2="-0.05" y2="2.42" layer="51" rot="R270"/>
-<rectangle x1="-0.95" y1="2.18" x2="-0.55" y2="2.42" layer="51" rot="R270"/>
-<rectangle x1="-1.45" y1="2.18" x2="-1.05" y2="2.42" layer="51" rot="R270"/>
-<rectangle x1="-1.95" y1="2.18" x2="-1.55" y2="2.42" layer="51" rot="R270"/>
-<rectangle x1="0.55" y1="2.18" x2="0.95" y2="2.42" layer="51" rot="R270"/>
-<rectangle x1="1.05" y1="2.18" x2="1.45" y2="2.42" layer="51" rot="R270"/>
-<rectangle x1="1.55" y1="2.18" x2="1.95" y2="2.42" layer="51" rot="R270"/>
-<rectangle x1="-0.45" y1="-2.42" x2="-0.05" y2="-2.18" layer="51" rot="R90"/>
-<rectangle x1="0.05" y1="-2.42" x2="0.45" y2="-2.18" layer="51" rot="R90"/>
-<rectangle x1="0.55" y1="-2.42" x2="0.95" y2="-2.18" layer="51" rot="R90"/>
-<rectangle x1="1.05" y1="-2.42" x2="1.45" y2="-2.18" layer="51" rot="R90"/>
-<rectangle x1="1.55" y1="-2.42" x2="1.95" y2="-2.18" layer="51" rot="R90"/>
-<rectangle x1="-0.95" y1="-2.42" x2="-0.55" y2="-2.18" layer="51" rot="R90"/>
-<rectangle x1="-1.45" y1="-2.42" x2="-1.05" y2="-2.18" layer="51" rot="R90"/>
-<rectangle x1="-1.95" y1="-2.42" x2="-1.55" y2="-2.18" layer="51" rot="R90"/>
-<rectangle x1="2.1" y1="-0.37" x2="2.5" y2="-0.13" layer="51" rot="R180"/>
-<rectangle x1="2.1" y1="0.13" x2="2.5" y2="0.37" layer="51" rot="R180"/>
-<rectangle x1="2.1" y1="0.63" x2="2.5" y2="0.87" layer="51" rot="R180"/>
-<rectangle x1="2.1" y1="1.13" x2="2.5" y2="1.37" layer="51" rot="R180"/>
-<rectangle x1="2.1" y1="1.63" x2="2.5" y2="1.87" layer="51" rot="R180"/>
-<rectangle x1="2.1" y1="-0.87" x2="2.5" y2="-0.63" layer="51" rot="R180"/>
-<rectangle x1="2.1" y1="-1.37" x2="2.5" y2="-1.13" layer="51" rot="R180"/>
-<rectangle x1="2.1" y1="-1.87" x2="2.5" y2="-1.63" layer="51" rot="R180"/>
-<circle x="-2.71790625" y="-2.68384375" radius="0.1" width="0.127" layer="21"/>
-<text x="-3.175" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="3.81" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DAPLINK_KL26Z">
-<pin name="IF_NRESET" x="-20.32" y="25.4" length="short"/>
-<pin name="NRESET_FB_ISP" x="-20.32" y="22.86" length="short"/>
-<pin name="NRESET_FB_BL" x="-20.32" y="20.32" length="short"/>
-<pin name="USB_D+" x="-20.32" y="15.24" length="short"/>
-<pin name="USB_D-" x="-20.32" y="12.7" length="short"/>
-<pin name="USB_VBUS" x="-20.32" y="10.16" length="short"/>
-<pin name="VREGIN" x="-20.32" y="5.08" length="short"/>
-<pin name="VOUT33" x="-20.32" y="2.54" length="short"/>
-<pin name="VDD" x="-20.32" y="-2.54" length="short"/>
-<pin name="VDDA" x="-20.32" y="-5.08" length="short"/>
-<pin name="VSSA" x="-20.32" y="-10.16" length="short"/>
-<pin name="VSS1" x="-20.32" y="-12.7" length="short"/>
-<pin name="VSS2" x="-20.32" y="-15.24" length="short"/>
-<pin name="XTALIN" x="-20.32" y="-20.32" length="short"/>
-<pin name="XTALOUT" x="-20.32" y="-22.86" length="short"/>
-<pin name="LED_MSD" x="22.86" y="25.4" length="short" rot="R180"/>
-<pin name="LED_HID" x="22.86" y="22.86" length="short" rot="R180"/>
-<pin name="LED_UART" x="22.86" y="20.32" length="short" rot="R180"/>
-<pin name="TGT_SWO" x="22.86" y="5.08" length="short" rot="R180"/>
-<pin name="TGT_SWDIO" x="22.86" y="7.62" length="short" rot="R180"/>
-<pin name="TGT_SWCLK" x="22.86" y="10.16" length="short" rot="R180"/>
-<pin name="TGT_NRESET" x="22.86" y="0" length="short" rot="R180"/>
-<pin name="WAKE_NREQ" x="22.86" y="-7.62" length="short" rot="R180"/>
-<pin name="SLEEP_NREQ" x="22.86" y="-10.16" length="short" rot="R180"/>
-<pin name="TGT_TX" x="22.86" y="-15.24" length="short" rot="R180"/>
-<pin name="TGT_RX" x="22.86" y="-17.78" length="short" rot="R180"/>
-<pin name="NC1" x="-5.08" y="-35.56" length="short" rot="R90"/>
-<pin name="NC2" x="-2.54" y="-35.56" length="short" rot="R90"/>
-<pin name="NC4" x="2.54" y="-35.56" length="short" rot="R90"/>
-<pin name="NC5" x="5.08" y="-35.56" length="short" rot="R90"/>
-<pin name="NC6" x="7.62" y="-35.56" length="short" rot="R90"/>
-<wire x1="-17.78" y1="33.02" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-33.02" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-33.02" x2="20.32" y2="33.02" width="0.254" layer="94"/>
-<wire x1="20.32" y1="33.02" x2="-17.78" y2="33.02" width="0.254" layer="94"/>
-<pin name="NC7" x="10.16" y="-35.56" length="short" rot="R90"/>
-<text x="-15.24" y="30.48" size="1.778" layer="94">MKL26Z128VFM4</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DAPLINK_KL26Z" prefix="U">
-<description>Unfinished!
-
-This is an interface MCU that runs DAPLink to enable advanced features for the target MCU</description>
-<gates>
-<gate name="G$1" symbol="DAPLINK_KL26Z" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QFN-32-NOPAD">
-<connects>
-<connect gate="G$1" pin="IF_NRESET" pad="19"/>
-<connect gate="G$1" pin="LED_HID" pad="30"/>
-<connect gate="G$1" pin="LED_MSD" pad="29"/>
-<connect gate="G$1" pin="LED_UART" pad="31"/>
-<connect gate="G$1" pin="NC1" pad="9"/>
-<connect gate="G$1" pin="NC2" pad="1"/>
-<connect gate="G$1" pin="NC4" pad="10"/>
-<connect gate="G$1" pin="NC5" pad="11"/>
-<connect gate="G$1" pin="NC6" pad="12"/>
-<connect gate="G$1" pin="NC7" pad="13"/>
-<connect gate="G$1" pin="NRESET_FB_BL" pad="14"/>
-<connect gate="G$1" pin="NRESET_FB_ISP" pad="21"/>
-<connect gate="G$1" pin="SLEEP_NREQ" pad="20"/>
-<connect gate="G$1" pin="TGT_NRESET" pad="22"/>
-<connect gate="G$1" pin="TGT_RX" pad="25"/>
-<connect gate="G$1" pin="TGT_SWCLK" pad="26"/>
-<connect gate="G$1" pin="TGT_SWDIO" pad="27"/>
-<connect gate="G$1" pin="TGT_SWO" pad="28"/>
-<connect gate="G$1" pin="TGT_TX" pad="24"/>
-<connect gate="G$1" pin="USB_D+" pad="3"/>
-<connect gate="G$1" pin="USB_D-" pad="4"/>
-<connect gate="G$1" pin="USB_VBUS" pad="32"/>
-<connect gate="G$1" pin="VDD" pad="15"/>
-<connect gate="G$1" pin="VDDA" pad="7"/>
-<connect gate="G$1" pin="VOUT33" pad="5"/>
-<connect gate="G$1" pin="VREGIN" pad="6"/>
-<connect gate="G$1" pin="VSS1" pad="2"/>
-<connect gate="G$1" pin="VSS2" pad="16"/>
-<connect gate="G$1" pin="VSSA" pad="8"/>
-<connect gate="G$1" pin="WAKE_NREQ" pad="23"/>
-<connect gate="G$1" pin="XTALIN" pad="17"/>
-<connect gate="G$1" pin="XTALOUT" pad="18"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Switches">
 <description>&lt;h3&gt;SparkFun Switches, Buttons, Encoders&lt;/h3&gt;
 In this library you'll find switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection.
@@ -23780,6 +23599,187 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="ArtemisDevKit">
+<packages>
+<package name="QFN-32-NOPAD">
+<description>&lt;h3&gt;QFN 32-Pin package w/ Thermal Pad&lt;/h3&gt;
+&lt;b&gt;***Unproven***&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;B&gt;Applicable Parts:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;TLC5940&lt;/ul&gt;</description>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2.1" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.1" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.1" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="2.1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.1" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.1" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.1" x2="-2.1" y2="-2.5" width="0.127" layer="21"/>
+<smd name="1" x="-1.75" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
+<smd name="2" x="-1.25" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
+<smd name="3" x="-0.75" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
+<smd name="4" x="-0.25" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
+<smd name="5" x="0.25" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
+<smd name="6" x="0.75" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
+<smd name="7" x="1.25" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
+<smd name="8" x="1.75" y="-2.5" dx="0.8" dy="0.2846" layer="1" rot="R90"/>
+<smd name="9" x="2.5" y="-1.75" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
+<smd name="10" x="2.5" y="-1.25" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
+<smd name="11" x="2.5" y="-0.75" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
+<smd name="12" x="2.5" y="-0.25" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
+<smd name="13" x="2.5" y="0.25" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
+<smd name="14" x="2.5" y="0.75" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
+<smd name="15" x="2.5" y="1.25" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
+<smd name="16" x="2.5" y="1.75" dx="0.8" dy="0.2846" layer="1" rot="R180"/>
+<smd name="17" x="1.75" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
+<smd name="18" x="1.25" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
+<smd name="19" x="0.75" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
+<smd name="20" x="0.25" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
+<smd name="21" x="-0.25" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
+<smd name="22" x="-0.75" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
+<smd name="23" x="-1.25" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
+<smd name="24" x="-1.75" y="2.5" dx="0.8" dy="0.2846" layer="1" rot="R270"/>
+<smd name="25" x="-2.5" y="1.75" dx="0.8" dy="0.2846" layer="1"/>
+<smd name="26" x="-2.5" y="1.25" dx="0.8" dy="0.2846" layer="1"/>
+<smd name="27" x="-2.5" y="0.75" dx="0.8" dy="0.2846" layer="1"/>
+<smd name="28" x="-2.5" y="0.25" dx="0.8" dy="0.2846" layer="1"/>
+<smd name="29" x="-2.5" y="-0.25" dx="0.8" dy="0.2846" layer="1"/>
+<smd name="30" x="-2.5" y="-0.75" dx="0.8" dy="0.2846" layer="1"/>
+<smd name="31" x="-2.5" y="-1.25" dx="0.8" dy="0.2846" layer="1"/>
+<smd name="32" x="-2.5" y="-1.75" dx="0.8" dy="0.2846" layer="1"/>
+<rectangle x1="-2.5" y1="0.13" x2="-2.1" y2="0.37" layer="51"/>
+<rectangle x1="-2.5" y1="-0.37" x2="-2.1" y2="-0.13" layer="51"/>
+<rectangle x1="-2.5" y1="-0.87" x2="-2.1" y2="-0.63" layer="51"/>
+<rectangle x1="-2.5" y1="-1.37" x2="-2.1" y2="-1.13" layer="51"/>
+<rectangle x1="-2.5" y1="-1.87" x2="-2.1" y2="-1.63" layer="51"/>
+<rectangle x1="-2.5" y1="0.63" x2="-2.1" y2="0.87" layer="51"/>
+<rectangle x1="-2.5" y1="1.13" x2="-2.1" y2="1.37" layer="51"/>
+<rectangle x1="-2.5" y1="1.63" x2="-2.1" y2="1.87" layer="51"/>
+<rectangle x1="0.05" y1="2.18" x2="0.45" y2="2.42" layer="51" rot="R270"/>
+<rectangle x1="-0.45" y1="2.18" x2="-0.05" y2="2.42" layer="51" rot="R270"/>
+<rectangle x1="-0.95" y1="2.18" x2="-0.55" y2="2.42" layer="51" rot="R270"/>
+<rectangle x1="-1.45" y1="2.18" x2="-1.05" y2="2.42" layer="51" rot="R270"/>
+<rectangle x1="-1.95" y1="2.18" x2="-1.55" y2="2.42" layer="51" rot="R270"/>
+<rectangle x1="0.55" y1="2.18" x2="0.95" y2="2.42" layer="51" rot="R270"/>
+<rectangle x1="1.05" y1="2.18" x2="1.45" y2="2.42" layer="51" rot="R270"/>
+<rectangle x1="1.55" y1="2.18" x2="1.95" y2="2.42" layer="51" rot="R270"/>
+<rectangle x1="-0.45" y1="-2.42" x2="-0.05" y2="-2.18" layer="51" rot="R90"/>
+<rectangle x1="0.05" y1="-2.42" x2="0.45" y2="-2.18" layer="51" rot="R90"/>
+<rectangle x1="0.55" y1="-2.42" x2="0.95" y2="-2.18" layer="51" rot="R90"/>
+<rectangle x1="1.05" y1="-2.42" x2="1.45" y2="-2.18" layer="51" rot="R90"/>
+<rectangle x1="1.55" y1="-2.42" x2="1.95" y2="-2.18" layer="51" rot="R90"/>
+<rectangle x1="-0.95" y1="-2.42" x2="-0.55" y2="-2.18" layer="51" rot="R90"/>
+<rectangle x1="-1.45" y1="-2.42" x2="-1.05" y2="-2.18" layer="51" rot="R90"/>
+<rectangle x1="-1.95" y1="-2.42" x2="-1.55" y2="-2.18" layer="51" rot="R90"/>
+<rectangle x1="2.1" y1="-0.37" x2="2.5" y2="-0.13" layer="51" rot="R180"/>
+<rectangle x1="2.1" y1="0.13" x2="2.5" y2="0.37" layer="51" rot="R180"/>
+<rectangle x1="2.1" y1="0.63" x2="2.5" y2="0.87" layer="51" rot="R180"/>
+<rectangle x1="2.1" y1="1.13" x2="2.5" y2="1.37" layer="51" rot="R180"/>
+<rectangle x1="2.1" y1="1.63" x2="2.5" y2="1.87" layer="51" rot="R180"/>
+<rectangle x1="2.1" y1="-0.87" x2="2.5" y2="-0.63" layer="51" rot="R180"/>
+<rectangle x1="2.1" y1="-1.37" x2="2.5" y2="-1.13" layer="51" rot="R180"/>
+<rectangle x1="2.1" y1="-1.87" x2="2.5" y2="-1.63" layer="51" rot="R180"/>
+<circle x="-2.71790625" y="-2.68384375" radius="0.1" width="0.127" layer="21"/>
+<text x="-3.175" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="3.81" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DAPLINK_KL26Z">
+<pin name="IF_!RESET" x="-20.32" y="25.4" length="short"/>
+<pin name="SW_!RESET!_BTN" x="-20.32" y="22.86" length="short"/>
+<pin name="NRESET_FB_BL" x="-20.32" y="20.32" length="short"/>
+<pin name="USB_D+" x="-20.32" y="15.24" length="short"/>
+<pin name="USB_D-" x="-20.32" y="12.7" length="short"/>
+<pin name="USB_VBUS" x="-20.32" y="10.16" length="short"/>
+<pin name="VREGIN" x="-20.32" y="5.08" length="short"/>
+<pin name="VOUT33" x="-20.32" y="2.54" length="short"/>
+<pin name="VDD" x="-20.32" y="-2.54" length="short"/>
+<pin name="VDDA" x="-20.32" y="-5.08" length="short"/>
+<pin name="VSSA" x="-20.32" y="-10.16" length="short"/>
+<pin name="VSS1" x="-20.32" y="-12.7" length="short"/>
+<pin name="VSS2" x="-20.32" y="-15.24" length="short"/>
+<pin name="XTALIN" x="-20.32" y="-20.32" length="short"/>
+<pin name="XTALOUT" x="-20.32" y="-22.86" length="short"/>
+<pin name="LED_MSD" x="22.86" y="25.4" length="short" rot="R180"/>
+<pin name="LED_HID" x="22.86" y="22.86" length="short" rot="R180"/>
+<pin name="LED_UART" x="22.86" y="20.32" length="short" rot="R180"/>
+<pin name="TGT_SWO" x="22.86" y="5.08" length="short" rot="R180"/>
+<pin name="TGT_SWDIO" x="22.86" y="7.62" length="short" rot="R180"/>
+<pin name="TGT_SWCLK" x="22.86" y="10.16" length="short" rot="R180"/>
+<pin name="TGT_NRESET" x="22.86" y="0" length="short" rot="R180"/>
+<pin name="WAKE_NREQ" x="22.86" y="-7.62" length="short" rot="R180"/>
+<pin name="SLEEP_NREQ" x="22.86" y="-10.16" length="short" rot="R180"/>
+<pin name="TGT_TX" x="22.86" y="-15.24" length="short" rot="R180"/>
+<pin name="TGT_RX" x="22.86" y="-17.78" length="short" rot="R180"/>
+<pin name="NC1" x="-5.08" y="-35.56" length="short" rot="R90"/>
+<pin name="NC2" x="-2.54" y="-35.56" length="short" rot="R90"/>
+<pin name="NC4" x="2.54" y="-35.56" length="short" rot="R90"/>
+<pin name="NC5" x="5.08" y="-35.56" length="short" rot="R90"/>
+<pin name="NC6" x="7.62" y="-35.56" length="short" rot="R90"/>
+<wire x1="-17.78" y1="33.02" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-33.02" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-33.02" x2="20.32" y2="33.02" width="0.254" layer="94"/>
+<wire x1="20.32" y1="33.02" x2="-17.78" y2="33.02" width="0.254" layer="94"/>
+<pin name="NC7" x="10.16" y="-35.56" length="short" rot="R90"/>
+<text x="-15.24" y="30.48" size="1.778" layer="94">MKL26Z128VFM4</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DAPLINK_KL26Z" prefix="U">
+<description>Unfinished!
+
+This is an interface MCU that runs DAPLink to enable advanced features for the target MCU</description>
+<gates>
+<gate name="G$1" symbol="DAPLINK_KL26Z" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-32-NOPAD">
+<connects>
+<connect gate="G$1" pin="IF_!RESET" pad="19"/>
+<connect gate="G$1" pin="LED_HID" pad="30"/>
+<connect gate="G$1" pin="LED_MSD" pad="29"/>
+<connect gate="G$1" pin="LED_UART" pad="31"/>
+<connect gate="G$1" pin="NC1" pad="9"/>
+<connect gate="G$1" pin="NC2" pad="1"/>
+<connect gate="G$1" pin="NC4" pad="10"/>
+<connect gate="G$1" pin="NC5" pad="11"/>
+<connect gate="G$1" pin="NC6" pad="12"/>
+<connect gate="G$1" pin="NC7" pad="13"/>
+<connect gate="G$1" pin="NRESET_FB_BL" pad="14"/>
+<connect gate="G$1" pin="SLEEP_NREQ" pad="20"/>
+<connect gate="G$1" pin="SW_!RESET!_BTN" pad="21"/>
+<connect gate="G$1" pin="TGT_NRESET" pad="22"/>
+<connect gate="G$1" pin="TGT_RX" pad="25"/>
+<connect gate="G$1" pin="TGT_SWCLK" pad="26"/>
+<connect gate="G$1" pin="TGT_SWDIO" pad="27"/>
+<connect gate="G$1" pin="TGT_SWO" pad="28"/>
+<connect gate="G$1" pin="TGT_TX" pad="24"/>
+<connect gate="G$1" pin="USB_D+" pad="3"/>
+<connect gate="G$1" pin="USB_D-" pad="4"/>
+<connect gate="G$1" pin="USB_VBUS" pad="32"/>
+<connect gate="G$1" pin="VDD" pad="15"/>
+<connect gate="G$1" pin="VDDA" pad="7"/>
+<connect gate="G$1" pin="VOUT33" pad="5"/>
+<connect gate="G$1" pin="VREGIN" pad="6"/>
+<connect gate="G$1" pin="VSS1" pad="2"/>
+<connect gate="G$1" pin="VSS2" pad="16"/>
+<connect gate="G$1" pin="VSSA" pad="8"/>
+<connect gate="G$1" pin="WAKE_NREQ" pad="23"/>
+<connect gate="G$1" pin="XTALIN" pad="17"/>
+<connect gate="G$1" pin="XTALOUT" pad="18"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -23794,7 +23794,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="DESIGNER" value="Owen Lyke, Kyle Wenner"/>
 <attribute name="REV" value="v03"/>
 </part>
-<part name="U1" library="artembed" deviceset="DAPLINK_KL26Z" device=""/>
+<part name="U1" library="ArtemisDevKit" deviceset="DAPLINK_KL26Z" device=""/>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="TP11" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value="TEST-POINT3X5"/>
@@ -25300,7 +25300,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="66.04" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="IF_NRESET"/>
+<pinref part="U1" gate="G$1" pin="IF_!RESET"/>
 <wire x1="66.04" y1="213.36" x2="68.58" y2="213.36" width="0.1524" layer="91"/>
 <label x="66.04" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -25423,7 +25423,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="248.92" y="248.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="NRESET_FB_ISP"/>
+<pinref part="U1" gate="G$1" pin="SW_!RESET!_BTN"/>
 <wire x1="68.58" y1="210.82" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
 <label x="66.04" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
