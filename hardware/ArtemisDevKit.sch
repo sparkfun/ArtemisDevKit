@@ -5068,6 +5068,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="1.8V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="V_USB">
+<description>&lt;h3&gt;USB Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="V_USB" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -5103,6 +5110,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 1.8V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="1.8V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="V_USB" prefix="SUPPLY">
+<description>&lt;h3&gt;USB Voltage Supply&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="V_USB" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5742,65 +5762,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="PAD.03X.03">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.03" Circle&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.03" x 0.03"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="PAD.03X.05">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="PAD.03X.04">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.04" Circle&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.04" x 0.04"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="TP_15TH">
-<description>&lt;h3&gt;Electrically Conductive Via 0.015" Drill&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area:0.015"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
-<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
-</package>
-<package name="1X01_NO_SILK">
-<description>&lt;h3&gt;Plated Through Hole - No Silk Outline&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
 <package name="USB-C-16P-2LAYER-PADS">
 <smd name="B6" x="0.75" y="-0.34" dx="0.3" dy="1" layer="1"/>
 <smd name="A7" x="0.25" y="-0.34" dx="0.3" dy="1" layer="1"/>
@@ -8794,17 +8755,6 @@ Part Number: HA-522</description>
 <wire x1="9" y1="-7" x2="9" y2="5" width="0.1524" layer="51"/>
 <wire x1="9" y1="5" x2="6" y2="5" width="0.1524" layer="51"/>
 </package>
-<package name="PAD.02X.02">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.02" Square&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.02" x 0.02"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="1" x="0" y="0" dx="0.508" dy="0.508" layer="1" cream="no"/>
-</package>
 <package name="USB-C-16P_4LAYER-PADS">
 <smd name="B6" x="0.75" y="-0.34" dx="0.3" dy="1" layer="1"/>
 <smd name="A7" x="0.25" y="-0.34" dx="0.3" dy="1" layer="1"/>
@@ -9048,13 +8998,6 @@ Used as a test point connection for pogo pins or other debugging tools.
 </package>
 </packages>
 <symbols>
-<symbol name="TEST-POINT">
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector">&gt;Value</text>
-<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
-</symbol>
 <symbol name="USB-C-MINIMUM">
 <description>&lt;h3&gt;USB - C 16 Pin&lt;/h3&gt;
 Exposes the minimal pins needed to implement a USB 2.x legacy device.</description>
@@ -9235,68 +9178,6 @@ Exposes the minimal pins needed to implement a USB 2.x legacy device.</descripti
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TEST-POINT" prefix="TP">
-<description>&lt;h3&gt;SparkFun Test Points&lt;/h3&gt;
-&lt;p&gt;Bare copper test points for troubleshooting or In-Circuit-Testing. These are used by our Production team for verifying production board runs using pogo-pins on test beds.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13284”&gt;SparkFun LSM9DS1 Breakout&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13714”&gt;SparkFun PSOC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13879"&gt;SparkFun Load Cell Amplifier&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="2" package="PAD.02X.02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3" package="PAD.03X.03">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3X5" package="PAD.03X.05">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3X4" package="PAD.03X.04">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TP_15TH_THRU" package="TP_15TH">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POGO_PTH" package="1X01_NO_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="USB_C" prefix="J" uservalue="yes">
 <description>&lt;h3&gt;USB Type C 16Pin Connector&lt;/h3&gt;
 
@@ -10578,23 +10459,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-0.9262" y1="-0.4262" x2="0.9262" y2="-0.4262" width="0.05" layer="39"/>
 <wire x1="0.9262" y1="-0.4262" x2="0.9262" y2="0.4262" width="0.05" layer="39"/>
 </package>
-<package name="1206">
-<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -10928,99 +10792,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="RES-14883" constant="no"/>
 <attribute name="VALUE" value="33" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="10OHM" prefix="R">
-<description>&lt;h3&gt;10Ω resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-1206-1/4W-1%" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08705"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT-1/4W-1%" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12180"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT_KIT-1/4W-1%" package="AXIAL-0.1-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12180"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12180"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12180"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12581"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-1/10W-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-09834"/>
-<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
@@ -12405,6 +12176,49 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
+<deviceset name="V_REG_AP2112" prefix="U">
+<description>&lt;h3&gt;AP2112 - 600mA CMOS LDO Regulator w/ Enable&lt;/h3&gt;
+&lt;p&gt;The AP2112 is CMOS process low dropout linear regulator with enable function, the regulator delivers a guaranteed 600mA (min.) continuous load current.&lt;/p&gt;
+&lt;p&gt;Features&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Output Voltage Accuracy: ±1.5% &lt;/li&gt;
+&lt;li&gt;Output Current: 600mA (Min.) &lt;/li&gt;
+&lt;li&gt;Foldback Short Current Protection: 50mA &lt;/li&gt;
+&lt;li&gt;Enable Function to Turn ON/OFF VOUT&lt;/li&gt;
+&lt;li&gt;Low Dropout Voltage (3.3V): 250mV (Typ.) @IOUT=600mA &lt;/li&gt;
+&lt;li&gt;Excellent Load Regulation: 0.2%/A (Typ.) &lt;/li&gt;
+&lt;li&gt;Excellent Line Regulation: 0.02%/V (Typ.) &lt;/li&gt;
+&lt;li&gt;Low Quiescent Current: 55μA (Typ.)&lt;/li&gt;
+&lt;li&gt;Low Standby Current: 0.01μA (Typ.)&lt;/li&gt;
+&lt;li&gt;Low Output Noise: 50μVRMS &lt;/li&gt;
+&lt;li&gt;PSRR: 100Hz -65dB, 1kHz -65dB &lt;/li&gt;
+&lt;li&gt; OTSD Protection &lt;/li&gt;
+&lt;li&gt;Stable  with  1.0μF Flexible Cap: Ceramic, Tantalum and Aluminum Electrolytic &lt;/li&gt;
+&lt;li&gt;Operation Temperature Range: -40°C to 85°C &lt;/li&gt;
+&lt;li&gt;ESD: MM 400V, HBM 4000V&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="V-REG-LDO_NO-BP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="K-3.3V" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-12457"/>
+<attribute name="VALUE" value="3.3V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-Sensors">
@@ -13010,7 +12824,6 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <part name="U1" library="ArtemisDevKit" deviceset="DAPLINK_KL26Z" device=""/>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
-<part name="TP11" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value="TEST-POINT3X5"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="USB_C" device="_2-LAYER"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="5.1k"/>
@@ -13034,11 +12847,9 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <part name="C8" library="SparkFun-Capacitors" deviceset="12PF" device="-0603-50V-5%" value="12pF"/>
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value="TEST-POINT3X5"/>
-<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value="TEST-POINT3X5"/>
 <part name="X1" library="SparkFun-Clocks" deviceset="CRYSTAL-16MHZ_SMALL" device="" value="16MHz"/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-4.6X2.8MM" value="TGT_RST"/>
+<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-5.2MM-TALL" value="TGT_RST"/>
 <part name="U2" library="SparkFun-IC-Microcontroller" deviceset="ARTEMIS_MODULE" device="SMD"/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-32.768KHZ" device="SMD-3.2X1.5" value="32.768kHz"/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="15PF" device="-0603-50V-5%" value="15pF"/>
@@ -13059,7 +12870,6 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <part name="R16" library="SparkFun-Resistors" deviceset="33OHM" device="-0603-1/10W-1%" value="33"/>
 <part name="D6" library="SparkFun-IC-Power" deviceset="PRTR5V0U2" device="F"/>
 <part name="GND24" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R17" library="SparkFun-Resistors" deviceset="10OHM" device="-0603-1/10W-1%" value="10"/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="GND25" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -13137,7 +12947,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <part name="J10" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE"/>
 <part name="J11" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE"/>
 <part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="TGT_BOOT" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -13153,7 +12963,12 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
-<part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="TGT_SWD_CLK" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="U5" library="SparkFun-IC-Power" deviceset="V_REG_AP2112" device="K-3.3V" value="3.3V"/>
+<part name="GND42" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY30" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY29" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
+<part name="SUPPLY31" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13175,6 +12990,10 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <text x="335.28" y="215.9" size="7.62" layer="94" font="vector">Connectors</text>
 <text x="5.08" y="99.06" size="7.62" layer="94" font="vector">USB</text>
 <text x="170.18" y="99.06" size="7.62" layer="94" font="vector">Sensors</text>
+<text x="65.278" y="141.224" size="1.27" layer="97" font="vector">Cut to isolate Artemis boot
+pin from interface chip</text>
+<text x="116.84" y="203.2" size="1.27" layer="97" font="vector">Cut to isolate Artemis swd
+clock  from interface chip</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -13192,10 +13011,6 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <instance part="C4" gate="G$1" x="177.8" y="205.74" smashed="yes">
 <attribute name="NAME" x="179.959" y="209.804" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="179.959" y="199.644" size="1.778" layer="96" font="vector" rot="R90"/>
-</instance>
-<instance part="TP11" gate="G$1" x="198.12" y="218.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="195.58" y="220.98" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="200.66" y="215.9" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="R12" gate="G$1" x="187.96" y="220.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="186.436" y="220.98" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -13278,12 +13093,6 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 </instance>
 <instance part="GND20" gate="1" x="48.26" y="119.38" smashed="yes">
 <attribute name="VALUE" x="48.26" y="119.126" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="TP4" gate="G$1" x="121.92" y="165.1" smashed="yes">
-<attribute name="NAME" x="127" y="165.1" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="TP3" gate="G$1" x="121.92" y="162.56" smashed="yes">
-<attribute name="NAME" x="127" y="162.56" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="X1" gate="G$1" x="43.18" y="160.02" smashed="yes">
 <attribute name="VALUE" x="39.624" y="163.576" size="1.778" layer="96" font="vector" align="top-left"/>
@@ -13370,10 +13179,6 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 </instance>
 <instance part="GND24" gate="1" x="73.66" y="25.4" smashed="yes">
 <attribute name="VALUE" x="73.66" y="25.146" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="R17" gate="G$1" x="106.68" y="68.58" smashed="yes">
-<attribute name="NAME" x="106.68" y="70.104" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="106.68" y="67.056" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="C12" gate="G$1" x="114.3" y="53.34" smashed="yes">
 <attribute name="NAME" x="116.459" y="57.404" size="1.778" layer="95" font="vector" rot="R90"/>
@@ -13639,8 +13444,8 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <instance part="GND23" gate="1" x="203.2" y="187.96" smashed="yes">
 <attribute name="VALUE" x="203.2" y="187.706" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="JP1" gate="G$1" x="73.66" y="147.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="76.2" y="144.78" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="TGT_BOOT" gate="G$1" x="73.66" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="76.2" y="147.32" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="SUPPLY11" gate="G$1" x="309.88" y="213.36" smashed="yes">
 <attribute name="VALUE" x="309.88" y="216.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -13677,8 +13482,24 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <instance part="FD3" gate="G$1" x="426.72" y="30.48" smashed="yes"/>
 <instance part="FD4" gate="G$1" x="429.26" y="30.48" smashed="yes"/>
 <instance part="LOGO1" gate="G$1" x="411.48" y="254" smashed="yes"/>
-<instance part="JP2" gate="G$1" x="119.38" y="198.12" smashed="yes">
+<instance part="TGT_SWD_CLK" gate="G$1" x="119.38" y="198.12" smashed="yes">
 <attribute name="NAME" x="116.84" y="200.66" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="U5" gate="G$1" x="22.86" y="228.6" smashed="yes">
+<attribute name="NAME" x="15.24" y="236.474" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="15.24" y="220.726" size="1.778" layer="96" font="vector" align="top-left"/>
+</instance>
+<instance part="GND42" gate="1" x="10.16" y="218.44" smashed="yes">
+<attribute name="VALUE" x="10.16" y="218.186" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="SUPPLY30" gate="G$1" x="33.02" y="236.22" smashed="yes">
+<attribute name="VALUE" x="33.02" y="239.014" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY29" gate="G$1" x="10.16" y="236.22" smashed="yes">
+<attribute name="VALUE" x="10.16" y="239.014" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY31" gate="G$1" x="152.4" y="71.12" smashed="yes">
+<attribute name="VALUE" x="152.4" y="73.914" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -14040,13 +13861,17 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <pinref part="J12" gate="G$1" pin="1"/>
 <pinref part="J12" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="GND"/>
+<wire x1="12.7" y1="223.52" x2="10.16" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="223.52" x2="10.16" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="GND42" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="VOUT33"/>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
-<wire x1="68.58" y1="190.5" x2="50.8" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="231.14" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VDDA"/>
@@ -14063,15 +13888,13 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <wire x1="68.58" y1="185.42" x2="50.8" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="185.42" x2="50.8" y2="182.88" width="0.1524" layer="91"/>
 <junction x="50.8" y="182.88"/>
-<wire x1="50.8" y1="190.5" x2="50.8" y2="185.42" width="0.1524" layer="91"/>
 <junction x="50.8" y="185.42"/>
 <wire x1="22.86" y1="182.88" x2="17.78" y2="182.88" width="0.1524" layer="91"/>
 <junction x="22.86" y="182.88"/>
 <wire x1="53.34" y1="223.52" x2="53.34" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="228.6" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
 <junction x="50.8" y="228.6"/>
-<wire x1="50.8" y1="190.5" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
-<junction x="50.8" y="190.5"/>
+<wire x1="50.8" y1="185.42" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -14235,6 +14058,12 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <pinref part="J12" gate="G$1" pin="5"/>
 <pinref part="J12" gate="G$1" pin="6"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="OUT"/>
+<wire x1="30.48" y1="233.68" x2="33.02" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="233.68" x2="33.02" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="SUPPLY30" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="LED_MSD" class="0">
 <segment>
@@ -14289,76 +14118,6 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <pinref part="R7" gate="R1" pin="2"/>
 <wire x1="40.64" y1="66.04" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="66.04" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VBUS_IF" class="0">
-<segment>
-<pinref part="J1" gate="J1" pin="VBUS"/>
-<wire x1="40.64" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
-<label x="43.18" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="D6" gate="D1" pin="5"/>
-<wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="68.58" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
-<junction x="99.06" y="68.58"/>
-<label x="99.06" y="76.2" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<wire x1="360.68" y1="142.24" x2="368.3" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="142.24" x2="368.3" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="144.78" x2="368.3" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="144.78" x2="368.3" y2="144.78" width="0.1524" layer="91"/>
-<junction x="368.3" y="144.78"/>
-<pinref part="J4" gate="G$1" pin="3"/>
-<pinref part="J4" gate="G$1" pin="4"/>
-<label x="368.3" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<wire x1="383.54" y1="142.24" x2="391.16" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="142.24" x2="391.16" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="144.78" x2="391.16" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="144.78" x2="391.16" y2="144.78" width="0.1524" layer="91"/>
-<junction x="391.16" y="144.78"/>
-<pinref part="J8" gate="G$1" pin="3"/>
-<pinref part="J8" gate="G$1" pin="4"/>
-<label x="391.16" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<wire x1="406.4" y1="142.24" x2="414.02" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="142.24" x2="414.02" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="144.78" x2="414.02" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="144.78" x2="414.02" y2="144.78" width="0.1524" layer="91"/>
-<junction x="414.02" y="144.78"/>
-<pinref part="J12" gate="G$1" pin="3"/>
-<pinref part="J12" gate="G$1" pin="4"/>
-<label x="414.02" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="VBUS_IF2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VREGIN"/>
-<wire x1="68.58" y1="193.04" x2="66.04" y2="193.04" width="0.1524" layer="91"/>
-<label x="66.04" y="193.04" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
-<label x="137.16" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="127" y1="68.58" x2="127" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="58.42" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
-<junction x="114.3" y="68.58"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="58.42" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
-<junction x="119.38" y="68.58"/>
-<wire x1="119.38" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
-<junction x="127" y="68.58"/>
 </segment>
 </net>
 <net name="USB_D+_R" class="0">
@@ -14520,12 +14279,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <label x="121.92" y="172.72" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="TGT_TX"/>
-<wire x1="111.76" y1="172.72" x2="116.84" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="172.72" x2="116.84" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="162.56" x2="121.92" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="TP3" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="172.72" x2="121.92" y2="172.72" width="0.1524" layer="91"/>
-<junction x="116.84" y="172.72"/>
+<wire x1="111.76" y1="172.72" x2="121.92" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="~D48(TX0/SCL5/SCK5)"/>
@@ -14537,12 +14291,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <label x="121.92" y="170.18" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="TGT_RX"/>
-<wire x1="119.38" y1="170.18" x2="111.76" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="170.18" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="TP4" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="170.18" x2="121.92" y2="170.18" width="0.1524" layer="91"/>
-<junction x="119.38" y="170.18"/>
+<wire x1="121.92" y1="170.18" x2="111.76" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="~D49(RX0/SDA5/MISO5)"/>
@@ -14554,7 +14303,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <wire x1="124.46" y1="198.12" x2="127" y2="198.12" width="0.1524" layer="91"/>
 <label x="127" y="198.12" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="TGT_SWD_CLK" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="187.96" x2="220.98" y2="187.96" width="0.1524" layer="91"/>
@@ -14614,16 +14363,12 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <wire x1="177.8" y1="213.36" x2="185.42" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="2"/>
 <pinref part="U2" gate="U1" pin="!RST"/>
-<wire x1="220.98" y1="213.36" x2="198.12" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="213.36" x2="187.96" y2="213.36" width="0.1524" layer="91"/>
 <junction x="185.42" y="213.36"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="213.36" x2="187.96" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="213.36" x2="185.42" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="215.9" x2="187.96" y2="213.36" width="0.1524" layer="91"/>
 <junction x="187.96" y="213.36"/>
-<pinref part="TP11" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="218.44" x2="198.12" y2="213.36" width="0.1524" layer="91"/>
-<junction x="198.12" y="213.36"/>
 <wire x1="175.26" y1="213.36" x2="177.8" y2="213.36" width="0.1524" layer="91"/>
 <junction x="177.8" y="213.36"/>
 <label x="175.26" y="213.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -15547,24 +15292,97 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <junction x="203.2" y="208.28"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
-<label x="66.04" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="149.86" x2="68.58" y2="149.86" width="0.1524" layer="91"/>
+<label x="66.04" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="TGT_BOOT" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TGT_SWCLK"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="TGT_SWD_CLK" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="198.12" x2="114.3" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="TGT_BOOT" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="NC1"/>
-<wire x1="83.82" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="152.4" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="152.4" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="V_USB" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="IN"/>
+<wire x1="12.7" y1="233.68" x2="10.16" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="233.68" x2="10.16" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="EN"/>
+<wire x1="12.7" y1="228.6" x2="10.16" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="228.6" x2="10.16" y2="233.68" width="0.1524" layer="91"/>
+<junction x="10.16" y="233.68"/>
+<pinref part="SUPPLY29" gate="G$1" pin="V_USB"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="VBUS"/>
+<wire x1="40.64" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
+<label x="43.18" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="D6" gate="D1" pin="5"/>
+<wire x1="99.06" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="68.58" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<junction x="99.06" y="68.58"/>
+<label x="99.06" y="76.2" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<label x="137.16" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="127" y1="68.58" x2="127" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="58.42" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<junction x="114.3" y="68.58"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="58.42" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+<junction x="119.38" y="68.58"/>
+<wire x1="119.38" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<junction x="127" y="68.58"/>
+<wire x1="99.06" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="360.68" y1="142.24" x2="368.3" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="142.24" x2="368.3" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="144.78" x2="368.3" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="144.78" x2="368.3" y2="144.78" width="0.1524" layer="91"/>
+<junction x="368.3" y="144.78"/>
+<pinref part="J4" gate="G$1" pin="3"/>
+<pinref part="J4" gate="G$1" pin="4"/>
+<label x="368.3" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<wire x1="383.54" y1="142.24" x2="391.16" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="142.24" x2="391.16" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="144.78" x2="391.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="144.78" x2="391.16" y2="144.78" width="0.1524" layer="91"/>
+<junction x="391.16" y="144.78"/>
+<pinref part="J8" gate="G$1" pin="3"/>
+<pinref part="J8" gate="G$1" pin="4"/>
+<label x="391.16" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<wire x1="406.4" y1="142.24" x2="414.02" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="142.24" x2="414.02" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="144.78" x2="414.02" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="144.78" x2="414.02" y2="144.78" width="0.1524" layer="91"/>
+<junction x="414.02" y="144.78"/>
+<pinref part="J12" gate="G$1" pin="3"/>
+<pinref part="J12" gate="G$1" pin="4"/>
+<label x="414.02" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VREGIN"/>
+<wire x1="68.58" y1="193.04" x2="66.04" y2="193.04" width="0.1524" layer="91"/>
+<label x="66.04" y="193.04" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
