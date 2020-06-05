@@ -13170,11 +13170,11 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <wire x1="330.2" y1="228.6" x2="330.2" y2="279.4" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="35.56" x2="330.2" y2="111.76" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="228.6" x2="431.8" y2="228.6" width="0.2032" layer="97" style="longdash"/>
-<text x="5.08" y="266.7" size="7.62" layer="94">Interface MCU - MKL26Z</text>
-<text x="170.18" y="266.7" size="7.62" layer="94">Target - Artemis Module (Apollo3)</text>
-<text x="335.28" y="215.9" size="7.62" layer="94">Connectors</text>
-<text x="5.08" y="99.06" size="7.62" layer="94">USB</text>
-<text x="170.18" y="99.06" size="7.62" layer="94">Sensors</text>
+<text x="5.08" y="266.7" size="7.62" layer="94" font="vector">Interface MCU - MKL26Z</text>
+<text x="170.18" y="266.7" size="7.62" layer="94" font="vector">Target - Artemis Module (Apollo3)</text>
+<text x="335.28" y="215.9" size="7.62" layer="94" font="vector">Connectors</text>
+<text x="5.08" y="99.06" size="7.62" layer="94" font="vector">USB</text>
+<text x="170.18" y="99.06" size="7.62" layer="94" font="vector">Sensors</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -14314,7 +14314,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <junction x="368.3" y="144.78"/>
 <pinref part="J4" gate="G$1" pin="3"/>
 <pinref part="J4" gate="G$1" pin="4"/>
-<label x="368.3" y="165.1" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="368.3" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="383.54" y1="142.24" x2="391.16" y2="142.24" width="0.1524" layer="91"/>
@@ -14324,7 +14324,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <junction x="391.16" y="144.78"/>
 <pinref part="J8" gate="G$1" pin="3"/>
 <pinref part="J8" gate="G$1" pin="4"/>
-<label x="391.16" y="165.1" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="391.16" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="406.4" y1="142.24" x2="414.02" y2="142.24" width="0.1524" layer="91"/>
@@ -14334,7 +14334,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <junction x="414.02" y="144.78"/>
 <pinref part="J12" gate="G$1" pin="3"/>
 <pinref part="J12" gate="G$1" pin="4"/>
-<label x="414.02" y="165.1" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="414.02" y="165.1" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="VBUS_IF2" class="0">
@@ -14346,7 +14346,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
-<label x="137.16" y="68.58" size="1.27" layer="95" xref="yes"/>
+<label x="137.16" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="127" y1="68.58" x2="127" y2="60.96" width="0.1524" layer="91"/>
@@ -14508,12 +14508,12 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U1" gate="G$1" pin="USB_VBUS"/>
 <wire x1="68.58" y1="198.12" x2="66.04" y2="198.12" width="0.1524" layer="91"/>
-<label x="66.04" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="66.04" y="198.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="IF_!RESET"/>
 <wire x1="66.04" y1="213.36" x2="68.58" y2="213.36" width="0.1524" layer="91"/>
-<label x="66.04" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="66.04" y="213.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TGT_TX" class="0">
@@ -14530,7 +14530,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~D48(TX0/SCL5/SCK5)"/>
 <wire x1="218.44" y1="200.66" x2="220.98" y2="200.66" width="0.1524" layer="91"/>
-<label x="218.44" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="200.66" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TGT_RX" class="0">
@@ -14547,7 +14547,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~D49(RX0/SDA5/MISO5)"/>
 <wire x1="218.44" y1="198.12" x2="220.98" y2="198.12" width="0.1524" layer="91"/>
-<label x="218.44" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="198.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TGT_SWCLK" class="0">
@@ -14626,17 +14626,17 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <junction x="198.12" y="213.36"/>
 <wire x1="175.26" y1="213.36" x2="177.8" y2="213.36" width="0.1524" layer="91"/>
 <junction x="177.8" y="213.36"/>
-<label x="175.26" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="175.26" y="213.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="!RESET"/>
 <wire x1="246.38" y1="248.92" x2="248.92" y2="248.92" width="0.1524" layer="91"/>
-<label x="248.92" y="248.92" size="1.27" layer="95" xref="yes"/>
+<label x="248.92" y="248.92" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="SW_!RESET!_BTN"/>
 <wire x1="68.58" y1="210.82" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
-<label x="66.04" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="66.04" y="210.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -14797,7 +14797,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SLMOSI/SLSDA)D1"/>
 <wire x1="292.1" y1="215.9" x2="289.56" y2="215.9" width="0.1524" layer="91"/>
-<label x="292.1" y="215.9" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="215.9" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D3" class="0">
@@ -14809,7 +14809,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SLNCE/I2SWCLK)D3"/>
 <wire x1="292.1" y1="210.82" x2="289.56" y2="210.82" width="0.1524" layer="91"/>
-<label x="292.1" y="210.82" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="210.82" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D4" class="0">
@@ -14821,7 +14821,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(RX1/SLINT)~D4"/>
 <wire x1="292.1" y1="208.28" x2="289.56" y2="208.28" width="0.1524" layer="91"/>
-<label x="292.1" y="208.28" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="208.28" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D5" class="0">
@@ -14833,7 +14833,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SCL0/SCK0)~D5"/>
 <wire x1="292.1" y1="205.74" x2="289.56" y2="205.74" width="0.1524" layer="91"/>
-<label x="292.1" y="205.74" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="205.74" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D6" class="0">
@@ -14845,7 +14845,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SDA0/MISO0/I2SDAT)~D6"/>
 <wire x1="289.56" y1="203.2" x2="292.1" y2="203.2" width="0.1524" layer="91"/>
-<label x="292.1" y="203.2" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="203.2" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D7" class="0">
@@ -14857,7 +14857,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(MOSI0/CLKOUT)~D7"/>
 <wire x1="292.1" y1="200.66" x2="289.56" y2="200.66" width="0.1524" layer="91"/>
-<label x="292.1" y="200.66" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="200.66" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_VSYNC" class="0">
@@ -14952,7 +14952,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SLSCK/SLSCL/CLKOUT)D0"/>
 <wire x1="292.1" y1="218.44" x2="289.56" y2="218.44" width="0.1524" layer="91"/>
-<label x="292.1" y="218.44" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="218.44" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_D2" class="0">
@@ -14964,7 +14964,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SLMISO)D2"/>
 <wire x1="292.1" y1="213.36" x2="289.56" y2="213.36" width="0.1524" layer="91"/>
-<label x="292.1" y="213.36" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="213.36" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CAMERA_TRIG" class="0">
@@ -15007,21 +15007,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(MOSI4)~D44"/>
 <wire x1="292.1" y1="139.7" x2="289.56" y2="139.7" width="0.1524" layer="91"/>
-<label x="292.1" y="139.7" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="139.7" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="91.44" x2="388.62" y2="91.44" width="0.1524" layer="91"/>
-<label x="391.16" y="91.44" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="91.44" x2="411.48" y2="91.44" width="0.1524" layer="91"/>
-<label x="414.02" y="91.44" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="91.44" x2="365.76" y2="91.44" width="0.1524" layer="91"/>
-<label x="368.3" y="91.44" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="3"/>
 </segment>
 </net>
@@ -15029,21 +15029,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SDA4/MISO4/RX1)D40"/>
 <wire x1="292.1" y1="149.86" x2="289.56" y2="149.86" width="0.1524" layer="91"/>
-<label x="292.1" y="149.86" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="88.9" x2="388.62" y2="88.9" width="0.1524" layer="91"/>
-<label x="391.16" y="88.9" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="88.9" x2="411.48" y2="88.9" width="0.1524" layer="91"/>
-<label x="414.02" y="88.9" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="88.9" x2="365.76" y2="88.9" width="0.1524" layer="91"/>
-<label x="368.3" y="88.9" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -15051,21 +15051,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SCL4/SCK4/TX1)~D39"/>
 <wire x1="292.1" y1="152.4" x2="289.56" y2="152.4" width="0.1524" layer="91"/>
-<label x="292.1" y="152.4" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="152.4" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="86.36" x2="388.62" y2="86.36" width="0.1524" layer="91"/>
-<label x="391.16" y="86.36" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="86.36" x2="411.48" y2="86.36" width="0.1524" layer="91"/>
-<label x="414.02" y="86.36" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="86.36" x2="365.76" y2="86.36" width="0.1524" layer="91"/>
-<label x="368.3" y="86.36" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -15073,21 +15073,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(MOSI3/RX1)D38"/>
 <wire x1="292.1" y1="154.94" x2="289.56" y2="154.94" width="0.1524" layer="91"/>
-<label x="292.1" y="154.94" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="154.94" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="96.52" x2="388.62" y2="96.52" width="0.1524" layer="91"/>
-<label x="391.16" y="96.52" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="96.52" x2="411.48" y2="96.52" width="0.1524" layer="91"/>
-<label x="414.02" y="96.52" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="96.52" x2="365.76" y2="96.52" width="0.1524" layer="91"/>
-<label x="368.3" y="96.52" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="5"/>
 </segment>
 </net>
@@ -15095,21 +15095,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SDA3/MISO3/RX1)~D43"/>
 <wire x1="292.1" y1="142.24" x2="289.56" y2="142.24" width="0.1524" layer="91"/>
-<label x="292.1" y="142.24" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="142.24" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="104.14" x2="388.62" y2="104.14" width="0.1524" layer="91"/>
-<label x="391.16" y="104.14" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="104.14" x2="411.48" y2="104.14" width="0.1524" layer="91"/>
-<label x="414.02" y="104.14" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="104.14" x2="365.76" y2="104.14" width="0.1524" layer="91"/>
-<label x="368.3" y="104.14" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="8"/>
 </segment>
 </net>
@@ -15117,21 +15117,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SCL3/SCK3/TX1)~D42"/>
 <wire x1="292.1" y1="144.78" x2="289.56" y2="144.78" width="0.1524" layer="91"/>
-<label x="292.1" y="144.78" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="101.6" x2="388.62" y2="101.6" width="0.1524" layer="91"/>
-<label x="391.16" y="101.6" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="101.6" x2="411.48" y2="101.6" width="0.1524" layer="91"/>
-<label x="414.02" y="101.6" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="101.6" x2="365.76" y2="101.6" width="0.1524" layer="91"/>
-<label x="368.3" y="101.6" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="7"/>
 </segment>
 </net>
@@ -15139,21 +15139,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(BLEIF_IRQ/SWO/I2SWCLK)D41"/>
 <wire x1="292.1" y1="147.32" x2="289.56" y2="147.32" width="0.1524" layer="91"/>
-<label x="292.1" y="147.32" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="147.32" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="109.22" x2="388.62" y2="109.22" width="0.1524" layer="91"/>
-<label x="391.16" y="109.22" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="109.22" x2="411.48" y2="109.22" width="0.1524" layer="91"/>
-<label x="414.02" y="109.22" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="109.22" x2="365.76" y2="109.22" width="0.1524" layer="91"/>
-<label x="368.3" y="109.22" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J5" gate="J1" pin="2"/>
 </segment>
 </net>
@@ -15161,26 +15161,26 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(I2SWCLK/CMPOUT)~D23"/>
 <wire x1="292.1" y1="175.26" x2="289.56" y2="175.26" width="0.1524" layer="91"/>
-<label x="292.1" y="175.26" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="175.26" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="251.46" x2="154.94" y2="248.92" width="0.1524" layer="91"/>
-<label x="154.94" y="251.46" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="154.94" y="251.46" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="53.34" x2="388.62" y2="53.34" width="0.1524" layer="91"/>
-<label x="391.16" y="53.34" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="53.34" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="53.34" x2="411.48" y2="53.34" width="0.1524" layer="91"/>
-<label x="414.02" y="53.34" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="53.34" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="53.34" x2="365.76" y2="53.34" width="0.1524" layer="91"/>
-<label x="368.3" y="53.34" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="53.34" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J9" gate="J1" pin="3"/>
 </segment>
 </net>
@@ -15188,21 +15188,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SDA2/MISO2/RX1)~D25"/>
 <wire x1="292.1" y1="170.18" x2="289.56" y2="170.18" width="0.1524" layer="91"/>
-<label x="292.1" y="170.18" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="170.18" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="73.66" x2="388.62" y2="73.66" width="0.1524" layer="91"/>
-<label x="391.16" y="73.66" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="11"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="73.66" x2="411.48" y2="73.66" width="0.1524" layer="91"/>
-<label x="414.02" y="73.66" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="11"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="73.66" x2="365.76" y2="73.66" width="0.1524" layer="91"/>
-<label x="368.3" y="73.66" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="G$1" pin="7"/>
 </segment>
 </net>
@@ -15210,21 +15210,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SCCRST)~D26"/>
 <wire x1="292.1" y1="167.64" x2="289.56" y2="167.64" width="0.1524" layer="91"/>
-<label x="292.1" y="167.64" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="167.64" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="71.12" x2="388.62" y2="71.12" width="0.1524" layer="91"/>
-<label x="391.16" y="71.12" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="71.12" x2="411.48" y2="71.12" width="0.1524" layer="91"/>
-<label x="414.02" y="71.12" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="71.12" x2="365.76" y2="71.12" width="0.1524" layer="91"/>
-<label x="368.3" y="71.12" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -15232,21 +15232,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SCL2/SCK2)~D27"/>
 <wire x1="292.1" y1="165.1" x2="289.56" y2="165.1" width="0.1524" layer="91"/>
-<label x="292.1" y="165.1" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="165.1" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="55.88" x2="388.62" y2="55.88" width="0.1524" layer="91"/>
-<label x="391.16" y="55.88" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="55.88" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="55.88" x2="411.48" y2="55.88" width="0.1524" layer="91"/>
-<label x="414.02" y="55.88" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="55.88" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="55.88" x2="365.76" y2="55.88" width="0.1524" layer="91"/>
-<label x="368.3" y="55.88" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="55.88" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J9" gate="J1" pin="4"/>
 </segment>
 </net>
@@ -15254,21 +15254,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(MOSI2/I2SWCLK)~D28"/>
 <wire x1="292.1" y1="162.56" x2="289.56" y2="162.56" width="0.1524" layer="91"/>
-<label x="292.1" y="162.56" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="162.56" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="76.2" x2="388.62" y2="76.2" width="0.1524" layer="91"/>
-<label x="391.16" y="76.2" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="12"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="76.2" x2="411.48" y2="76.2" width="0.1524" layer="91"/>
-<label x="414.02" y="76.2" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="12"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="76.2" x2="365.76" y2="76.2" width="0.1524" layer="91"/>
-<label x="368.3" y="76.2" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="G$1" pin="8"/>
 </segment>
 </net>
@@ -15276,21 +15276,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(RX1/TRIG1/PDMDATA)D36"/>
 <wire x1="292.1" y1="160.02" x2="289.56" y2="160.02" width="0.1524" layer="91"/>
-<label x="292.1" y="160.02" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="160.02" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="99.06" x2="388.62" y2="99.06" width="0.1524" layer="91"/>
-<label x="391.16" y="99.06" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="99.06" x2="411.48" y2="99.06" width="0.1524" layer="91"/>
-<label x="414.02" y="99.06" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="99.06" x2="365.76" y2="99.06" width="0.1524" layer="91"/>
-<label x="368.3" y="99.06" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -15298,21 +15298,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(TX1/PDMCLK/SCCIO)~D37"/>
 <wire x1="292.1" y1="157.48" x2="289.56" y2="157.48" width="0.1524" layer="91"/>
-<label x="292.1" y="157.48" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="157.48" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="93.98" x2="388.62" y2="93.98" width="0.1524" layer="91"/>
-<label x="391.16" y="93.98" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="93.98" x2="411.48" y2="93.98" width="0.1524" layer="91"/>
-<label x="414.02" y="93.98" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="93.98" x2="365.76" y2="93.98" width="0.1524" layer="91"/>
-<label x="368.3" y="93.98" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="4"/>
 </segment>
 </net>
@@ -15320,21 +15320,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(SWO/I2SDAT/PDMDATA)~D45"/>
 <wire x1="292.1" y1="137.16" x2="289.56" y2="137.16" width="0.1524" layer="91"/>
-<label x="292.1" y="137.16" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="106.68" x2="388.62" y2="106.68" width="0.1524" layer="91"/>
-<label x="391.16" y="106.68" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="106.68" x2="411.48" y2="106.68" width="0.1524" layer="91"/>
-<label x="414.02" y="106.68" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="106.68" x2="365.76" y2="106.68" width="0.1524" layer="91"/>
-<label x="368.3" y="106.68" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J5" gate="J1" pin="1"/>
 </segment>
 </net>
@@ -15342,21 +15342,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~AD13(I2SBCLK/RX1)"/>
 <wire x1="218.44" y1="167.64" x2="220.98" y2="167.64" width="0.1524" layer="91"/>
-<label x="218.44" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="167.64" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="58.42" x2="388.62" y2="58.42" width="0.1524" layer="91"/>
-<label x="391.16" y="58.42" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="58.42" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="58.42" x2="411.48" y2="58.42" width="0.1524" layer="91"/>
-<label x="414.02" y="58.42" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="58.42" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="58.42" x2="365.76" y2="58.42" width="0.1524" layer="91"/>
-<label x="368.3" y="58.42" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="58.42" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -15364,21 +15364,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="AD16(TRIG0/SCCRST)"/>
 <wire x1="218.44" y1="165.1" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
-<label x="218.44" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="165.1" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="114.3" x2="388.62" y2="114.3" width="0.1524" layer="91"/>
-<label x="391.16" y="114.3" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="12"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="114.3" x2="411.48" y2="114.3" width="0.1524" layer="91"/>
-<label x="414.02" y="114.3" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="12"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="114.3" x2="365.76" y2="114.3" width="0.1524" layer="91"/>
-<label x="368.3" y="114.3" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J5" gate="J1" pin="4"/>
 </segment>
 </net>
@@ -15386,21 +15386,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~AD29(PDMDATA)"/>
 <wire x1="218.44" y1="162.56" x2="220.98" y2="162.56" width="0.1524" layer="91"/>
-<label x="218.44" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="162.56" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="66.04" x2="388.62" y2="66.04" width="0.1524" layer="91"/>
-<label x="391.16" y="66.04" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="66.04" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="66.04" x2="411.48" y2="66.04" width="0.1524" layer="91"/>
-<label x="414.02" y="66.04" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="66.04" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="66.04" x2="365.76" y2="66.04" width="0.1524" layer="91"/>
-<label x="368.3" y="66.04" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="66.04" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="G$1" pin="4"/>
 </segment>
 </net>
@@ -15408,21 +15408,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~AD31(SCCCLK)"/>
 <wire x1="218.44" y1="160.02" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
-<label x="218.44" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="160.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="111.76" x2="388.62" y2="111.76" width="0.1524" layer="91"/>
-<label x="391.16" y="111.76" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="111.76" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J22" gate="G$1" pin="11"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="111.76" x2="411.48" y2="111.76" width="0.1524" layer="91"/>
-<label x="414.02" y="111.76" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="111.76" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J26" gate="G$1" pin="11"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="111.76" x2="365.76" y2="111.76" width="0.1524" layer="91"/>
-<label x="368.3" y="111.76" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="111.76" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J5" gate="J1" pin="3"/>
 </segment>
 </net>
@@ -15430,21 +15430,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~AD32(SCCIO)"/>
 <wire x1="218.44" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
-<label x="218.44" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="157.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="63.5" x2="388.62" y2="63.5" width="0.1524" layer="91"/>
-<label x="391.16" y="63.5" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="63.5" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="63.5" x2="411.48" y2="63.5" width="0.1524" layer="91"/>
-<label x="414.02" y="63.5" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="63.5" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="63.5" x2="365.76" y2="63.5" width="0.1524" layer="91"/>
-<label x="368.3" y="63.5" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="63.5" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="G$1" pin="3"/>
 </segment>
 </net>
@@ -15452,21 +15452,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~AD33(SWO/32KHZ)"/>
 <wire x1="218.44" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
-<label x="218.44" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="154.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="60.96" x2="388.62" y2="60.96" width="0.1524" layer="91"/>
-<label x="391.16" y="60.96" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="60.96" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="60.96" x2="411.48" y2="60.96" width="0.1524" layer="91"/>
-<label x="414.02" y="60.96" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="60.96" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="60.96" x2="365.76" y2="60.96" width="0.1524" layer="91"/>
-<label x="368.3" y="60.96" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="60.96" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -15474,21 +15474,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="AD34(CMPRF2/PDMDATA)"/>
 <wire x1="218.44" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
-<label x="218.44" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="152.4" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="68.58" x2="388.62" y2="68.58" width="0.1524" layer="91"/>
-<label x="391.16" y="68.58" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="68.58" x2="411.48" y2="68.58" width="0.1524" layer="91"/>
-<label x="414.02" y="68.58" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="68.58" x2="365.76" y2="68.58" width="0.1524" layer="91"/>
-<label x="368.3" y="68.58" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="G$1" pin="5"/>
 </segment>
 </net>
@@ -15496,21 +15496,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="(TX1/32KHZ/SWO)~D24"/>
 <wire x1="292.1" y1="172.72" x2="289.56" y2="172.72" width="0.1524" layer="91"/>
-<label x="292.1" y="172.72" size="1.27" layer="95" xref="yes"/>
+<label x="292.1" y="172.72" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="48.26" x2="388.62" y2="48.26" width="0.1524" layer="91"/>
-<label x="391.16" y="48.26" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="48.26" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="48.26" x2="411.48" y2="48.26" width="0.1524" layer="91"/>
-<label x="414.02" y="48.26" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="48.26" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="48.26" x2="365.76" y2="48.26" width="0.1524" layer="91"/>
-<label x="368.3" y="48.26" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="48.26" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J9" gate="J1" pin="1"/>
 </segment>
 </net>
@@ -15518,21 +15518,21 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~AD35(TX1/I2SDAT/PDMCLK)"/>
 <wire x1="218.44" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
-<label x="218.44" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="218.44" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="391.16" y1="50.8" x2="388.62" y2="50.8" width="0.1524" layer="91"/>
-<label x="391.16" y="50.8" size="1.27" layer="95" xref="yes"/>
+<label x="391.16" y="50.8" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J14" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="50.8" x2="411.48" y2="50.8" width="0.1524" layer="91"/>
-<label x="414.02" y="50.8" size="1.27" layer="95" xref="yes"/>
+<label x="414.02" y="50.8" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J25" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="368.3" y1="50.8" x2="365.76" y2="50.8" width="0.1524" layer="91"/>
-<label x="368.3" y="50.8" size="1.27" layer="95" xref="yes"/>
+<label x="368.3" y="50.8" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J9" gate="J1" pin="2"/>
 </segment>
 </net>
@@ -15540,7 +15540,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <segment>
 <pinref part="U2" gate="U1" pin="~BOOT(MOSI5/RX1/32KHZ)"/>
 <wire x1="200.66" y1="208.28" x2="203.2" y2="208.28" width="0.1524" layer="91"/>
-<label x="200.66" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="200.66" y="208.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="208.28" x2="220.98" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="203.2" x2="203.2" y2="208.28" width="0.1524" layer="91"/>
@@ -15548,7 +15548,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 </segment>
 <segment>
 <wire x1="66.04" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
-<label x="66.04" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="66.04" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 </net>
