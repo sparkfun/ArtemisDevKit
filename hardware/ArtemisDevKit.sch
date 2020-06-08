@@ -9742,6 +9742,21 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </technology>
 </technologies>
 </device>
+<device name="NO_SILK_DNP" package="1X08_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONN_12" prefix="J" uservalue="yes">
@@ -11690,7 +11705,7 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="15747"/>
+<attribute name="PROD_ID" value="IC-15168"/>
 </technology>
 </technologies>
 </device>
@@ -12926,8 +12941,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY23" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="J4" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE"/>
-<part name="J8" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_FEMALE_PTH"/>
-<part name="J12" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_FEMALE_PTH"/>
+<part name="J8" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_DNP"/>
+<part name="J12" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_DNP"/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
 <part name="J14" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK"/>
 <part name="J22" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK"/>

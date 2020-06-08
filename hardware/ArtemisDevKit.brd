@@ -12679,7 +12679,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="U1" library="SparkFun-IC-Microcontroller" package="QFN-32-NOPAD" value="DAPLINK_KL26Z128VFM4" x="10.16" y="8.89" rot="R180">
 <attribute name="NAME" x="13.335" y="8.89" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="15747" x="10.16" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PROD_ID" value="IC-15168" x="10.16" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="6.35" y="8.89" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 </element>
 <element name="U2" library="SparkFun-IC-Microcontroller" package="ARTEMIS_FP" value="ARTEMIS_MODULESMD" x="38.1" y="27.94" rot="R90">
@@ -12714,12 +12714,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="J8" library="SparkFun-Connectors" package="1X08_NO_SILK" value="" x="92.075" y="33.02" rot="R270">
 <attribute name="NAME" x="93.472" y="34.29" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="PROD_ID" value="CONN-08438" x="92.075" y="33.02" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="90.043" y="34.29" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J12" library="SparkFun-Connectors" package="1X08_NO_SILK" value="" x="90.17" y="33.02" rot="R270">
 <attribute name="NAME" x="91.567" y="34.29" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="PROD_ID" value="CONN-08438" x="90.17" y="33.02" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="88.138" y="34.29" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J14" library="SparkFun-Connectors" package="1X12_NO_SILK" value="" x="78.74" y="3.81" rot="R180">
