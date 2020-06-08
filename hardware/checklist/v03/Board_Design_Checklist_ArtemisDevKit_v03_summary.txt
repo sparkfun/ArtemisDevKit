@@ -1,0 +1,9 @@
+1) Are the standoffs in the lower right corner? [NO]
+comment: This design has no standoffs (could change for Reds)
+
+2) Does the board pass the Board Autochecklist ULP? [NO]
+comment: fails on standoffs (intentional), breadboard spacing (intentional, and not totally accurate) and footprint silk width (eagle library needs updating)
+
+3) Do V-Scored edges have a 50 mil border free of pads and parts (to prevent cracking on separation)? [NO]
+comment: This is outdated. We routinely have pads within 50 mil of edges
+
