@@ -23653,7 +23653,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="USB_C" device="_2-LAYER"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="USB_C" device="_2-LAYER" value="USB"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="5.1k"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="5.1k"/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -23763,17 +23763,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J8" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_DNP"/>
 <part name="J12" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_DNP"/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
-<part name="J14" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK"/>
-<part name="J22" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK"/>
-<part name="J23" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK"/>
-<part name="J24" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK"/>
-<part name="J25" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK"/>
-<part name="J26" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK"/>
+<part name="J14" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK" value="PTH"/>
+<part name="J22" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK" value="PTH"/>
+<part name="J23" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK" value="PTH"/>
+<part name="J24" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK" value="PTH"/>
+<part name="J25" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK" value="PTH"/>
+<part name="J26" library="SparkFun-Connectors" deviceset="CONN_12" device="NO_SILK" value="PTH"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="J5" library="SparkFun-Connectors" deviceset="CONN_04" device="SMD_STRAIGHT_COMBO" value="1X04_SMD_STRAIGHT_COMBO"/>
-<part name="J9" library="SparkFun-Connectors" deviceset="CONN_04" device="SMD_STRAIGHT_COMBO" value="1X04_SMD_STRAIGHT_COMBO"/>
-<part name="J10" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE"/>
-<part name="J11" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE"/>
+<part name="J5" library="SparkFun-Connectors" deviceset="CONN_04" device="SMD_STRAIGHT_COMBO" value="SMD"/>
+<part name="J9" library="SparkFun-Connectors" deviceset="CONN_04" device="SMD_STRAIGHT_COMBO" value="SMD"/>
+<part name="J10" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE" value="SMD"/>
+<part name="J11" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE" value="SMD"/>
 <part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TGT_BOOT" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -23823,6 +23823,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 pin from interface chip</text>
 <text x="116.84" y="203.2" size="1.27" layer="97" font="vector">Cut to isolate Artemis swd
 clock  from interface chip</text>
+<text x="363.22" y="180.34" size="1.778" layer="97" font="vector">power rail intended for output only</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
