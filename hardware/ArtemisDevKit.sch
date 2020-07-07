@@ -23889,7 +23889,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="R20" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="R19" library="SparkFun-Resistors" deviceset="5.62KOHM" device="-0603-1/10W-1%" value="5.62k"/>
@@ -23968,7 +23967,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY25" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
 <part name="GND39" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND37" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="J7" library="SparkFun-Connectors" deviceset="CAMERA-HIMAX" device=""/>
+<part name="J7" library="SparkFun-Connectors" deviceset="CAMERA-HIMAX" device="BOTTOM-CONTACT" value="CAMERA-HIMAXBOTTOM-CONTACT"/>
 <part name="C18" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="C19" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="J6" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="JS-1MM" value="QWIIC_RIGHT_ANGLE"/>
@@ -24030,6 +24029,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".2_INCH"/>
 <part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3" value="INTFC_SWDIO"/>
 <part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3" value="INTFC_SWDCLK"/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24066,16 +24066,16 @@ clock  from interface chip</text>
 <attribute name="DESIGNER" x="353.314" y="11.176" size="2.7432" layer="94" font="vector"/>
 <attribute name="REV" x="419.1" y="6.604" size="2.7432" layer="94" font="vector"/>
 </instance>
-<instance part="GND11" gate="1" x="177.8" y="187.96" smashed="yes">
-<attribute name="VALUE" x="177.8" y="187.706" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND11" gate="1" x="38.1" y="190.5" smashed="yes">
+<attribute name="VALUE" x="38.1" y="190.246" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="C4" gate="G$1" x="177.8" y="205.74" smashed="yes">
-<attribute name="NAME" x="179.959" y="209.804" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="179.959" y="199.644" size="1.778" layer="96" font="vector" rot="R90"/>
+<instance part="C4" gate="G$1" x="38.1" y="203.2" smashed="yes">
+<attribute name="NAME" x="40.259" y="207.264" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="40.259" y="197.104" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
-<instance part="R12" gate="G$1" x="187.96" y="220.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="186.436" y="220.98" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="189.484" y="220.98" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R12" gate="G$1" x="38.1" y="218.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.656" y="213.36" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="39.624" y="223.52" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="J1" gate="J1" x="27.94" y="66.04" smashed="yes">
 <attribute name="VALUE" x="25.4" y="53.594" size="1.778" layer="96" font="vector" rot="MR180" align="top-left"/>
@@ -24098,9 +24098,6 @@ clock  from interface chip</text>
 <instance part="GND5" gate="1" x="43.18" y="25.4" smashed="yes">
 <attribute name="VALUE" x="43.18" y="25.146" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="50.8" y="231.14" smashed="yes">
-<attribute name="VALUE" x="50.8" y="233.934" size="1.778" layer="96" font="vector" align="bottom-center"/>
-</instance>
 <instance part="C14" gate="G$1" x="134.62" y="38.1" smashed="yes">
 <attribute name="NAME" x="134.239" y="42.164" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="134.239" y="32.004" size="1.778" layer="96" font="vector" rot="R90"/>
@@ -24113,9 +24110,9 @@ clock  from interface chip</text>
 <attribute name="NAME" x="125.476" y="55.88" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="128.524" y="55.88" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R11" gate="G$1" x="53.34" y="218.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="54.864" y="215.9" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="54.864" y="220.98" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R11" gate="G$1" x="30.48" y="218.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="32.004" y="213.36" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="32.004" y="220.98" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="C5" gate="G$1" x="17.78" y="175.26" smashed="yes">
 <attribute name="NAME" x="14.224" y="178.181" size="1.778" layer="95" font="vector"/>
@@ -24162,9 +24159,9 @@ clock  from interface chip</text>
 <instance part="GND19" gate="1" x="43.18" y="119.38" smashed="yes">
 <attribute name="VALUE" x="43.18" y="119.126" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="S2" gate="G$1" x="185.42" y="205.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="183.896" y="205.74" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="185.928" y="205.74" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="S2" gate="G$1" x="45.72" y="203.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="44.196" y="203.2" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="46.228" y="203.2" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="U2" gate="U1" x="254" y="180.34" smashed="yes">
 <attribute name="NAME" x="223.52" y="221.488" size="1.778" layer="95" font="vector"/>
@@ -24327,8 +24324,8 @@ clock  from interface chip</text>
 <instance part="GND4" gate="1" x="292.1" y="236.22" smashed="yes">
 <attribute name="VALUE" x="292.1" y="235.966" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="187.96" y="228.6" smashed="yes">
-<attribute name="VALUE" x="187.96" y="231.394" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY9" gate="G$1" x="38.1" y="228.6" smashed="yes">
+<attribute name="VALUE" x="38.1" y="231.394" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="220.98" y="251.46" smashed="yes">
 <attribute name="VALUE" x="220.98" y="254.254" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -24546,18 +24543,18 @@ clock  from interface chip</text>
 <instance part="TGT_SWD_CLK" gate="G$1" x="119.38" y="198.12" smashed="yes">
 <attribute name="NAME" x="116.84" y="200.66" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="U5" gate="G$1" x="22.86" y="228.6" smashed="yes">
-<attribute name="NAME" x="15.24" y="236.474" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="15.24" y="220.726" size="1.778" layer="96" font="vector" align="top-left"/>
+<instance part="U5" gate="G$1" x="78.74" y="246.38" smashed="yes">
+<attribute name="NAME" x="71.12" y="254.254" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="71.12" y="238.506" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="GND42" gate="1" x="10.16" y="218.44" smashed="yes">
-<attribute name="VALUE" x="10.16" y="218.186" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND42" gate="1" x="66.04" y="236.22" smashed="yes">
+<attribute name="VALUE" x="66.04" y="235.966" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY30" gate="G$1" x="33.02" y="236.22" smashed="yes">
-<attribute name="VALUE" x="33.02" y="239.014" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY30" gate="G$1" x="88.9" y="254" smashed="yes">
+<attribute name="VALUE" x="88.9" y="256.794" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY29" gate="G$1" x="10.16" y="236.22" smashed="yes">
-<attribute name="VALUE" x="10.16" y="239.014" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY29" gate="G$1" x="66.04" y="254" smashed="yes">
+<attribute name="VALUE" x="66.04" y="256.794" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="U1" gate="G$1" x="88.9" y="187.96" smashed="yes"/>
 <instance part="LOGO2" gate="G$1" x="337.82" y="241.3" smashed="yes"/>
@@ -24569,6 +24566,9 @@ clock  from interface chip</text>
 <attribute name="NAME" x="106.68" y="142.24" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="114.3" y="142.24" size="1.778" layer="96" font="vector"/>
 </instance>
+<instance part="SUPPLY7" gate="G$1" x="17.78" y="228.6" smashed="yes">
+<attribute name="VALUE" x="17.78" y="231.394" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24576,12 +24576,12 @@ clock  from interface chip</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="177.8" y1="190.5" x2="177.8" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="198.12" x2="185.42" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="198.12" x2="185.42" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="193.04" x2="38.1" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="195.58" x2="45.72" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="195.58" x2="45.72" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="203.2" x2="177.8" y2="198.12" width="0.1524" layer="91"/>
-<junction x="177.8" y="198.12"/>
+<wire x1="38.1" y1="200.66" x2="38.1" y2="195.58" width="0.1524" layer="91"/>
+<junction x="38.1" y="195.58"/>
 <pinref part="S2" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -24931,39 +24931,12 @@ clock  from interface chip</text>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
-<wire x1="12.7" y1="223.52" x2="10.16" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="223.52" x2="10.16" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="241.3" x2="66.04" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="241.3" x2="66.04" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="GND42" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
-<segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="231.14" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="182.88" x2="17.78" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="182.88" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="182.88" x2="50.8" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="182.88" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="180.34" x2="22.86" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="180.34" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
-<junction x="27.94" y="182.88"/>
-<wire x1="68.58" y1="185.42" x2="50.8" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="185.42" x2="50.8" y2="182.88" width="0.1524" layer="91"/>
-<junction x="50.8" y="182.88"/>
-<junction x="50.8" y="185.42"/>
-<wire x1="22.86" y1="182.88" x2="17.78" y2="182.88" width="0.1524" layer="91"/>
-<junction x="22.86" y="182.88"/>
-<wire x1="53.34" y1="223.52" x2="53.34" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="228.6" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
-<junction x="50.8" y="228.6"/>
-<wire x1="50.8" y1="185.42" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VDD"/>
-<pinref part="U1" gate="G$1" pin="VDDA"/>
-</segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="248.92" x2="114.3" y2="251.46" width="0.1524" layer="91"/>
@@ -24989,9 +24962,14 @@ clock  from interface chip</text>
 <pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="226.06" x2="187.96" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="223.52" x2="30.48" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
+<wire x1="38.1" y1="226.06" x2="38.1" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="226.06" x2="30.48" y2="226.06" width="0.1524" layer="91"/>
+<junction x="38.1" y="226.06"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="223.52" x2="38.1" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="VCC"/>
@@ -25128,9 +25106,31 @@ clock  from interface chip</text>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="OUT"/>
-<wire x1="30.48" y1="233.68" x2="33.02" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="233.68" x2="33.02" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="251.46" x2="88.9" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="251.46" x2="88.9" y2="254" width="0.1524" layer="91"/>
 <pinref part="SUPPLY30" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="185.42" x2="66.04" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="VDDA"/>
+<wire x1="27.94" y1="182.88" x2="66.04" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="182.88" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="180.34" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
+<junction x="27.94" y="182.88"/>
+<wire x1="22.86" y1="182.88" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="180.34" x2="22.86" y2="182.88" width="0.1524" layer="91"/>
+<junction x="22.86" y="182.88"/>
+<wire x1="22.86" y1="182.88" x2="17.78" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="182.88" x2="17.78" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="185.42" x2="66.04" y2="182.88" width="0.1524" layer="91"/>
+<junction x="66.04" y="182.88"/>
+<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
+<wire x1="17.78" y1="228.6" x2="17.78" y2="182.88" width="0.1524" layer="91"/>
+<junction x="17.78" y="182.88"/>
 </segment>
 </net>
 <net name="LED_MSD" class="0">
@@ -25238,10 +25238,12 @@ clock  from interface chip</text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<wire x1="68.58" y1="208.28" x2="53.34" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="208.28" x2="53.34" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="208.28" x2="50.8" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="185.42" x2="30.48" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="NRESET_FB_BL"/>
+<wire x1="30.48" y1="185.42" x2="50.8" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="185.42" x2="50.8" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -25433,31 +25435,14 @@ clock  from interface chip</text>
 <pinref part="U1" gate="G$1" pin="TGT_NRESET"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="213.36" x2="185.42" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="210.82" x2="177.8" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="213.36" x2="185.42" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="2"/>
-<pinref part="U2" gate="U1" pin="!RST"/>
-<wire x1="220.98" y1="213.36" x2="187.96" y2="213.36" width="0.1524" layer="91"/>
-<junction x="185.42" y="213.36"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="213.36" x2="185.42" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="215.9" x2="187.96" y2="213.36" width="0.1524" layer="91"/>
-<junction x="187.96" y="213.36"/>
-<wire x1="175.26" y1="213.36" x2="177.8" y2="213.36" width="0.1524" layer="91"/>
-<junction x="177.8" y="213.36"/>
-<label x="175.26" y="213.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="!RESET"/>
 <wire x1="246.38" y1="248.92" x2="248.92" y2="248.92" width="0.1524" layer="91"/>
 <label x="248.92" y="248.92" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="210.82" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
-<label x="66.04" y="210.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="SW_!RESET!_BTN"/>
+<pinref part="U2" gate="U1" pin="!RST"/>
+<wire x1="220.98" y1="213.36" x2="200.66" y2="213.36" width="0.1524" layer="91"/>
+<label x="200.66" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -26391,12 +26376,12 @@ clock  from interface chip</text>
 <net name="V_USB" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="IN"/>
-<wire x1="12.7" y1="233.68" x2="10.16" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="233.68" x2="10.16" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="251.46" x2="66.04" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="251.46" x2="66.04" y2="254" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="EN"/>
-<wire x1="12.7" y1="228.6" x2="10.16" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="228.6" x2="10.16" y2="233.68" width="0.1524" layer="91"/>
-<junction x="10.16" y="233.68"/>
+<wire x1="68.58" y1="246.38" x2="66.04" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="246.38" x2="66.04" y2="251.46" width="0.1524" layer="91"/>
+<junction x="66.04" y="251.46"/>
 <pinref part="SUPPLY29" gate="G$1" pin="V_USB"/>
 </segment>
 <segment>
@@ -26455,6 +26440,21 @@ clock  from interface chip</text>
 <wire x1="68.58" y1="193.04" x2="66.04" y2="193.04" width="0.1524" layer="91"/>
 <label x="66.04" y="193.04" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="VREGIN"/>
+</segment>
+</net>
+<net name="!RST!_BTN" class="0">
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="210.82" x2="45.72" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="208.28" x2="38.1" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="210.82" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="213.36" x2="38.1" y2="210.82" width="0.1524" layer="91"/>
+<junction x="38.1" y="210.82"/>
+<pinref part="U1" gate="G$1" pin="SW_!RESET!_BTN"/>
+<wire x1="68.58" y1="210.82" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
+<junction x="45.72" y="210.82"/>
 </segment>
 </net>
 </nets>
