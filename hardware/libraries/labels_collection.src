@@ -1,5 +1,5 @@
-"[Artemis DEV KIT]" -s 0.106
-"[Artemis DEV KIT]" -s 0.095
+"Artemis Dev Kit" -s 0.106
+"Artemis Dev Kit" -s 0.095
 
 "[intfc]" -s 0.04
 "[tgt]" -s 0.04
@@ -33,9 +33,9 @@
 "[IOM2]" -s 0.06
 "[IOM3]" -s 0.06
 "[IOM4]" -s 0.06
-"[SCL/SCLK]" -s 0.06
-"[SDA/MISO]" -s 0.06
-"[MOSI]" -s 0.06
+"[SCL/SCK]" -s 0.06
+"[SDA/SDI]" -s 0.06
+"[SDO]" -s 0.06
 "[UART0]" -s 0.06
 "[UART1]" -s 0.06
 "TX" -s 0.065
