@@ -1,0 +1,3 @@
+[submodule "hardware/libraries/buzzard"]
+	path = hardware/libraries/buzzard
+	url = https://github.com/sparkfunX/Buzzard
