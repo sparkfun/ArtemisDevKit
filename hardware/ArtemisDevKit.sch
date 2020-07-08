@@ -24007,7 +24007,6 @@ pin from interface chip</text>
 <text x="116.84" y="203.2" size="1.27" layer="97" font="vector">Cut to isolate Artemis swd
 clock  from interface chip</text>
 <text x="363.22" y="180.34" size="1.778" layer="97" font="vector">power rail intended for output only</text>
-<text x="71.12" y="261.62" size="1.778" layer="97">VIN Max 6V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
