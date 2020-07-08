@@ -21830,51 +21830,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="2.2KOHM" prefix="R">
-<description>&lt;h3&gt;2.2kΩ resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08272"/>
-<attribute name="VALUE" value="2.2k"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402-1/16W-1%" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-14341" constant="no"/>
-<attribute name="VALUE" value="2.2K" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402T-1/16W-1%" package="0402-TIGHT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-14341" constant="no"/>
-<attribute name="VALUE" value="2.2k" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-Clocks">
@@ -23972,8 +23927,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C19" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="J6" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="JS-1MM" value="QWIIC_RIGHT_ANGLE"/>
 <part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R15" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R14" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R13" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY24" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -24005,8 +23958,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J11" library="SparkFun-Connectors" deviceset="CONN_08" device="SMD-COMBO-FEMALE" value="SMD"/>
 <part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TGT_BOOT" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
-<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
 <part name="SUPPLY26" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -24056,6 +24007,7 @@ pin from interface chip</text>
 <text x="116.84" y="203.2" size="1.27" layer="97" font="vector">Cut to isolate Artemis swd
 clock  from interface chip</text>
 <text x="363.22" y="180.34" size="1.778" layer="97" font="vector">power rail intended for output only</text>
+<text x="71.12" y="261.62" size="1.778" layer="97">VIN Max 6V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -24389,14 +24341,6 @@ clock  from interface chip</text>
 <instance part="GND28" gate="1" x="375.92" y="190.5" smashed="yes">
 <attribute name="VALUE" x="375.92" y="190.246" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R15" gate="G$1" x="317.5" y="205.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="315.976" y="205.74" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="319.024" y="205.74" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R14" gate="G$1" x="309.88" y="205.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="308.356" y="205.74" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="311.404" y="205.74" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
 <instance part="R13" gate="G$1" x="203.2" y="198.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="201.676" y="198.12" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="204.724" y="198.12" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -24504,12 +24448,6 @@ clock  from interface chip</text>
 </instance>
 <instance part="TGT_BOOT" gate="G$1" x="73.66" y="149.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.2" y="147.32" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="SUPPLY11" gate="G$1" x="309.88" y="213.36" smashed="yes">
-<attribute name="VALUE" x="309.88" y="216.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY12" gate="G$1" x="317.5" y="213.36" smashed="yes">
-<attribute name="VALUE" x="317.5" y="216.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="365.76" y="160.02" smashed="yes">
 <attribute name="VALUE" x="363.22" y="162.814" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -25065,16 +25003,6 @@ clock  from interface chip</text>
 <pinref part="SUPPLY22" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="309.88" y1="213.36" x2="309.88" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="317.5" y1="213.36" x2="317.5" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
 <wire x1="365.76" y1="147.32" x2="365.76" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="149.86" x2="365.76" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="147.32" x2="365.76" y2="147.32" width="0.1524" layer="91"/>
@@ -25554,12 +25482,8 @@ clock  from interface chip</text>
 <label x="373.38" y="195.58" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="320.04" y1="198.12" x2="309.88" y2="198.12" width="0.1524" layer="91"/>
-<label x="320.04" y="198.12" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="309.88" y1="198.12" x2="289.56" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="200.66" x2="309.88" y2="198.12" width="0.1524" layer="91"/>
-<junction x="309.88" y="198.12"/>
+<label x="292.1" y="198.12" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="292.1" y1="198.12" x2="289.56" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="U2" gate="U1" pin="(SCL1/SCK1/TX1/SCCLK)D8"/>
 </segment>
 <segment>
@@ -25580,12 +25504,8 @@ clock  from interface chip</text>
 <label x="373.38" y="198.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="320.04" y1="195.58" x2="317.5" y2="195.58" width="0.1524" layer="91"/>
-<label x="320.04" y="195.58" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="317.5" y1="195.58" x2="289.56" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="200.66" x2="317.5" y2="195.58" width="0.1524" layer="91"/>
-<junction x="317.5" y="195.58"/>
+<label x="292.1" y="195.58" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="292.1" y1="195.58" x2="289.56" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="U2" gate="U1" pin="(SDA1/SDI1/RX1/SCCIO)D9"/>
 </segment>
 <segment>

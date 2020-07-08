@@ -1,10 +1,10 @@
 "[Artemis Dev Kit]" -s 0.112
-"[Artemis Dev Kit]" -s 0.100
+"[Artemis Dev Kit]" -s 0.096
 
-"[intfc]" -s 0.04
-"[tgt]" -s 0.04
-"[tgt boot]"
-"[tgt swd clk]"
+"[INTFC]" -s 0.04
+"[TGT]" -s 0.04
+"[TGT BOOT]" -s 0.035
+"[TGT SWD CLK]" -s 0.035
 
 "PWR"
 "COM"
@@ -12,16 +12,16 @@
 "MSD"
 "STAT"
 
-"(mic)" -s 0.045
-"(acc)" -s 0.045
-"(cam)" -s 0.045
+"(MIC)" -s 0.045
+"(ACC)" -s 0.045
+"(CAM)" -s 0.045
 
 "A" -s 0.05 -a cc
 "x" -s 0.07 -a cc
 "y" -s 0.06 -a cc
 "z" -s 0.06 -a cc
 
-"(!rst!)" -s 0.05
+"(!RST!)" -s 0.05
 
 "[GND]" -s 0.065
 "[GND]" -s 0.055
