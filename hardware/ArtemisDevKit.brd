@@ -15836,22 +15836,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,1,baeb05689f8b85fe"/>
 <approved hash="19,1,c27fd58514fca8f0"/>
 <approved hash="19,1,74220b373cdfb113"/>
-<approved hash="4,1,0208bff4fa79c7f7"/>
-<approved hash="4,1,ee5afa189ef20aca"/>
-<approved hash="4,1,b4db402f6e2d1aab"/>
-<approved hash="4,1,798dbacdae26ed1c"/>
-<approved hash="4,1,d54acfa8ab42303a"/>
-<approved hash="4,1,39d888e4c329f387"/>
-<approved hash="4,1,8f0b773f577d2edb"/>
-<approved hash="4,1,429d8f7d9b96d7ec"/>
-<approved hash="4,16,0208bff4fa79c7f7"/>
-<approved hash="4,16,ee5afa189ef20aca"/>
-<approved hash="4,16,b4db402f6e2d1aab"/>
-<approved hash="4,16,798dbacdae26ed1c"/>
-<approved hash="4,16,d54acfa8ab42303a"/>
-<approved hash="4,16,39d888e4c329f387"/>
-<approved hash="4,16,8f0b773f577d2edb"/>
-<approved hash="4,16,429d8f7d9b96d7ec"/>
 <approved hash="19,1,2c925c387920d19f"/>
 <approved hash="19,1,2ac15e28a42bd0c2"/>
 <approved hash="19,1,b96ea1d866d89677"/>
@@ -15874,7 +15858,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,1,9c4cf53f0f3c664f"/>
 <approved hash="19,1,c4928437e12f6990"/>
 <approved hash="19,1,716d61dcded8fe74"/>
-<approved hash="19,1,6d3464135f30a2ea"/>
 <approved hash="19,1,5c9044379d2d6d93"/>
 <approved hash="19,1,9c942c3069299196"/>
 <approved hash="19,1,9c938c37f529d590"/>
@@ -15885,13 +15868,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,1,bf6aac1956174564"/>
 <approved hash="19,1,ae24935769555426"/>
 <approved hash="19,1,9b39984a6249613a"/>
-<approved hash="19,1,894bbf3298627f14"/>
-<approved hash="19,1,954d3cc35264af97"/>
 <approved hash="19,1,9bfb8e88748761f4"/>
 <approved hash="19,1,2d76259fdf90d779"/>
 <approved hash="19,1,a511c6623c625f11"/>
 <approved hash="19,1,5257c7243d23a850"/>
-<approved hash="19,1,0174f7f28c37a20b"/>
 <approved hash="19,1,9d72de0124fe678d"/>
 <approved hash="19,1,e46c04c8d9d1e16e"/>
 <approved hash="19,1,796cb1da56d8e675"/>
@@ -15904,6 +15884,26 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,1,996eb9d9eedb6e75"/>
 <approved hash="19,1,616cd1db9ed8fe75"/>
 <approved hash="19,1,7fcff1260b2685cf"/>
+<approved hash="4,1,31e85bade7431bea"/>
+<approved hash="4,1,922047fb1b2cfeb3"/>
+<approved hash="4,1,1a322379381842b8"/>
+<approved hash="4,1,3af7752ddff557e5"/>
+<approved hash="4,1,a4307c8b2cbcc803"/>
+<approved hash="4,1,2c8215490f8877c8"/>
+<approved hash="4,1,0ce74e5de8656155"/>
+<approved hash="4,1,07586d9dd0d32e9a"/>
+<approved hash="4,16,0ce74e5de8656155"/>
+<approved hash="4,16,07586d9dd0d32e9a"/>
+<approved hash="4,16,2c8215490f8877c8"/>
+<approved hash="4,16,a4307c8b2cbcc803"/>
+<approved hash="4,16,1a322379381842b8"/>
+<approved hash="4,16,3af7752ddff557e5"/>
+<approved hash="4,16,31e85bade7431bea"/>
+<approved hash="4,16,922047fb1b2cfeb3"/>
+<approved hash="19,1,96c744912f976f2d"/>
+<approved hash="19,1,892c142e55fa02d7"/>
+<approved hash="19,1,d79f0009627663c0"/>
+<approved hash="19,1,9d37edbfc4c5c75b"/>
 </errors>
 </board>
 </drawing>
