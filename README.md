@@ -36,7 +36,7 @@ Documentation
     * [SparkFun Ambiq Apollo3 Arduino Core](https://github.com/sparkfun/Arduino_Apollo3) - The SparkFun Arduino core for the Apollo3 MCU (i.e. the Artemis modules)
         * `.json` file needed for the SparkFun Ambiq Apollo3 Arduino Core:
         <br>
-            [`https://raw.githubusercontent.com/sparkfun/Arduino_Apollo3/master/package_sparkfun_apollo3_index.json`](https://raw.githubusercontent.com/sparkfun/Arduino_Apollo3/master/package_sparkfun_apollo3_index.json)
+            <code><a href="https://raw.githubusercontent.com/sparkfun/Arduino_Apollo3/master/package_sparkfun_apollo3_index.json">https://raw.githubusercontent.com/sparkfun/Arduino_Apollo3/master/package_sparkfun_apollo3_index.json</a></code>
     * [Mbed™ OS](https://github.com/sparkfun/mbed-os-ambiq-apollo3) - Implementation of the Apollo3 (i.e. Artemis module) in Mbed&trade; OS
     * [AmbiqSDK](https://github.com/sparkfun/AmbiqSuiteSDK) - A copy of the AmbiqSuite SDK maintained by SparkFun
     * [pyOCD](https://github.com/sparkfun/pyOCD) - Implementation of the Apollo3 (i.e. Artemis module) for pyOCD
