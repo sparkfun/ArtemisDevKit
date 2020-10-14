@@ -16,10 +16,13 @@ The [*SparkFun Artemis Development Kit (DEV-16828)*](https://www.sparkfun.com/pr
 Repository Contents
 -------------------
 
-* **/Hardware** - Eagle design files (.brd, .sch)
-    * **/Production** - Production panel files (.brd)
-* **/Reference** - Datasheets (.pdf)
-* **/.** *(i.e. the current directory)* - Dimensions (.pdf and .png)
+* **/Hardware**
+   * Eagle design files (.brd, .sch)
+   * Dimensions (.pdf and .png)
+   * **/Production** - Production panel files (.brd)
+* **/Reference**
+   * Datasheets (.pdf)
+   * Functional Block Digaram (.png)
 
 Documentation
 --------------
